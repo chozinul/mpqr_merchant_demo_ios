@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lastAccessCode</key>
+	<string>87654321</string>
+	<key>merchantCurrencyNumericCode</key>
+	<string>356</string>
+	<key>merchantCity</key>
+	<string>Delhi</string>
+	<key>merchantCountryCode</key>
+	<string>IN</string>
+	<key>merchantIdentifier</key>
+	<string>5555222233334444</string>
+	<key>merchantName</key>
+	<string>Go Go Transport</string>
+</dict>
+</plist>

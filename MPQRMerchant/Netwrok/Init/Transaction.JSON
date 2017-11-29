@@ -1,0 +1,58 @@
+{
+    "transactions": [
+                     {
+                     "currencyNumericCode": "356",
+                     "invoiceNumber": "VB5DDBOY",
+                     "referenceId": "0DGDXO7Y",
+                     "terminalNumber": "3124652125",
+                     "tipAmount": 0,
+                     "transactionAmount": 111.11,
+                     "transactionDate": "2017-10-30T16:09:01GMT+08:00"
+                     },
+                     {
+                     "currencyNumericCode": "356",
+                     "invoiceNumber": "HDAP3QCR",
+                     "referenceId": "1CVUS7AL",
+                     "terminalNumber": "3124652125",
+                     "tipAmount": 1,
+                     "transactionAmount": 10,
+                     "transactionDate": "2017-10-24T18:22:03GMT+08:00"
+                     },
+                     {
+                     "currencyNumericCode": "999",
+                     "invoiceNumber": "QNUJRRHR",
+                     "referenceId": "BWVWHCI8",
+                     "terminalNumber": "3124652125",
+                     "tipAmount": 200,
+                     "transactionAmount": 100,
+                     "transactionDate": "2017-11-01T18:09:52GMT+08:00"
+                     },
+                     {
+                     "currencyNumericCode": "356",
+                     "invoiceNumber": "RCDZ6NYL",
+                     "referenceId": "GX1XQXSC",
+                     "terminalNumber": "3124652125",
+                     "tipAmount": 12.2,
+                     "transactionAmount": 10,
+                     "transactionDate": "2017-10-25T13:11:43GMT+08:00"
+                     },
+                     {
+                     "currencyNumericCode": "356",
+                     "invoiceNumber": "LSHAWJEP",
+                     "referenceId": "ANL73GAX",
+                     "terminalNumber": "3124652125",
+                     "tipAmount": 0.11,
+                     "transactionAmount": 15.89,
+                     "transactionDate": "2017-10-23T19:24:38GMT+08:00"
+                     },
+                     {
+                     "currencyNumericCode": "999",
+                     "invoiceNumber": "QLPL4WPU",
+                     "referenceId": "XJD0MA8Y",
+                     "terminalNumber": "3124652125",
+                     "tipAmount": 2.22,
+                     "transactionAmount": 1.11,
+                     "transactionDate": "2017-11-01T12:44:20GMT+08:00"
+                     }
+                     ]
+}

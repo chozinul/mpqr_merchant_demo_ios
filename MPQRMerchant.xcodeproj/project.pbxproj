@@ -1,0 +1,1025 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D655B6A783F919F98E69518 /* Pods_MPQRMerchantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA4BA1B431B344C894086FA /* Pods_MPQRMerchantTests.framework */; };
+		C128DEB71FB143E6009365DA /* TransactionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEB61FB14327009365DA /* TransactionListViewController.m */; };
+		C128DEB81FB143E9009365DA /* TransactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEB41FB14327009365DA /* TransactionDetailViewController.m */; };
+		C128DEBA1FB15792009365DA /* temp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C128DEB91FB15792009365DA /* temp.storyboard */; };
+		C128DEBF1FB16999009365DA /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEBD1FB16999009365DA /* SettingTableViewCell.m */; };
+		C128DEC01FB16999009365DA /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C128DEBE1FB16999009365DA /* SettingTableViewCell.xib */; };
+		C128DEC31FB184AB009365DA /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEC21FB184AB009365DA /* SettingViewController.m */; };
+		C128DEC61FB19CCE009365DA /* GenericInputDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEC51FB19CCE009365DA /* GenericInputDialogViewController.m */; };
+		C128DECB1FB1A100009365DA /* GenericRadioButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEC91FB1A100009365DA /* GenericRadioButtonTableViewCell.m */; };
+		C128DECC1FB1A100009365DA /* GenericRadioButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C128DECA1FB1A100009365DA /* GenericRadioButtonTableViewCell.xib */; };
+		C128DECF1FB1AA3C009365DA /* GenericRadioButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DECE1FB1AA3C009365DA /* GenericRadioButtonViewController.m */; };
+		C128DED21FB1AC92009365DA /* CountryCode.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DED11FB1AC92009365DA /* CountryCode.m */; };
+		C128DED51FB1BE69009365DA /* CreditCardFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DED41FB1BE69009365DA /* CreditCardFormatter.m */; };
+		C13E2D201FAAEE9A0098DF2F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D1C1FAAED740098DF2F /* LoginViewController.m */; };
+		C13E2D211FAAEE9D0098DF2F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D1F1FAAEE0C0098DF2F /* BaseViewController.m */; };
+		C13E2D221FAAEEA10098DF2F /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D151FAAED6C0098DF2F /* LoginManager.m */; };
+		C13E2D241FAAEEA60098DF2F /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D191FAAED6C0098DF2F /* UserManager.m */; };
+		C13E2D331FAAEED80098DF2F /* DialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D271FAAEEC60098DF2F /* DialogViewController.m */; };
+		C13E2D4D1FAC64AE0098DF2F /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D4C1FAC64AE0098DF2F /* Settings.m */; };
+		C13E2D501FAC650F0098DF2F /* QRData.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D4F1FAC650F0098DF2F /* QRData.m */; };
+		C13E2D551FAC6B0F0098DF2F /* RealmDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D541FAC6B0F0098DF2F /* RealmDataSource.m */; };
+		C13E2D581FAEFFC50098DF2F /* init.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13E2D571FAEFFC50098DF2F /* init.plist */; };
+		C13E2D5B1FAF06760098DF2F /* PreferenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D5A1FAF06760098DF2F /* PreferenceManager.m */; };
+		C13E2D5D1FB014A10098DF2F /* Transaction.JSON in Resources */ = {isa = PBXBuildFile; fileRef = C13E2D5C1FB014A00098DF2F /* Transaction.JSON */; };
+		C13E2D601FB03F460098DF2F /* TipTypeDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D5F1FB03F460098DF2F /* TipTypeDialogViewController.m */; };
+		C13E2D671FB0408C0098DF2F /* TipTypeChooserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C13E2D651FB0408C0098DF2F /* TipTypeChooserTableViewCell.m */; };
+		C13E2D681FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13E2D661FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib */; };
+		C149F5FD1FB3130900644D68 /* TextImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C149F5FC1FB3130900644D68 /* TextImageButton.m */; };
+		C17B008A1FB0722A00461701 /* QRDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C17B00891FB0722A00461701 /* QRDisplayViewController.m */; };
+		C1C0778E1FAAE80C00D26D8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C0778D1FAAE80C00D26D8C /* AppDelegate.m */; };
+		C1C077911FAAE80C00D26D8C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077901FAAE80C00D26D8C /* MainViewController.m */; };
+		C1C077941FAAE80C00D26D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C077921FAAE80C00D26D8C /* Main.storyboard */; };
+		C1C077961FAAE80C00D26D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C077951FAAE80C00D26D8C /* Assets.xcassets */; };
+		C1C077991FAAE80C00D26D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C077971FAAE80C00D26D8C /* LaunchScreen.storyboard */; };
+		C1C0779C1FAAE80C00D26D8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C0779B1FAAE80C00D26D8C /* main.m */; };
+		C1C077A61FAAE80C00D26D8C /* MPQRMerchantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077A51FAAE80C00D26D8C /* MPQRMerchantTests.m */; };
+		C1C077D51FAAEB6800D26D8C /* MPQRServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C01FAAEB5800D26D8C /* MPQRServer.m */; };
+		C1C077D61FAAEB6B00D26D8C /* MPQRService.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C21FAAEB5800D26D8C /* MPQRService.m */; };
+		C1C077D71FAAEB6F00D26D8C /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C51FAAEB5800D26D8C /* BaseRequest.m */; };
+		C1C077D81FAAEB7F00D26D8C /* ChangeDefaultCardRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C71FAAEB5800D26D8C /* ChangeDefaultCardRequest.m */; };
+		C1C077D91FAAEB8200D26D8C /* GetUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C91FAAEB5800D26D8C /* GetUserInfoRequest.m */; };
+		C1C077DA1FAAEB8500D26D8C /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077CB1FAAEB5800D26D8C /* LoginRequest.m */; };
+		C1C077DB1FAAEB8700D26D8C /* LogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077CD1FAAEB5800D26D8C /* LogoutRequest.m */; };
+		C1C077DC1FAAEB8A00D26D8C /* MakePaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077CF1FAAEB5800D26D8C /* MakePaymentRequest.m */; };
+		C1C077DD1FAAEB8D00D26D8C /* TransactionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077D11FAAEB5800D26D8C /* TransactionsRequest.m */; };
+		C1C077DE1FAAEB9300D26D8C /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077D41FAAEB5800D26D8C /* LoginResponse.m */; };
+		C1C077E61FAAEC3D00D26D8C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077BC1FAAEACD00D26D8C /* User.m */; };
+		C1C077E71FAAEC4000D26D8C /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077BA1FAAEACD00D26D8C /* Transaction.m */; };
+		C1C077E81FAAEC4300D26D8C /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077B81FAAEACD00D26D8C /* Receipt.m */; };
+		C1C077E91FAAEC4500D26D8C /* PaymentInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077B61FAAEACD00D26D8C /* PaymentInstrument.m */; };
+		C1C077EA1FAAEC4800D26D8C /* PaymentData.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077B41FAAEACD00D26D8C /* PaymentData.m */; };
+		C1C077EB1FAAEC4B00D26D8C /* Merchant.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077B21FAAEACD00D26D8C /* Merchant.m */; };
+		C1C077EC1FAAEC5B00D26D8C /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077E11FAAEC1300D26D8C /* ColorManager.m */; };
+		C1C077EE1FAAEC6000D26D8C /* CurrencyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077E51FAAEC1300D26D8C /* CurrencyFormatter.m */; };
+		C1F021391FB29ACA00C16102 /* CreditCardInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F021381FB29ACA00C16102 /* CreditCardInputViewController.m */; };
+		C1F0213C1FB2C1BF00C16102 /* CurrencyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F0213B1FB2C1BF00C16102 /* CurrencyCode.m */; };
+		C1F0213E1FB2C44F00C16102 /* Currency.init in Resources */ = {isa = PBXBuildFile; fileRef = C1F0213D1FB2C44F00C16102 /* Currency.init */; };
+		FF15098B31BB6801402741E8 /* Pods_MPQRMerchant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDBF87494BF89E0CDCB9C3B /* Pods_MPQRMerchant.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1C077A21FAAE80C00D26D8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1C077811FAAE80C00D26D8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1C077881FAAE80C00D26D8C;
+			remoteInfo = MPQRMerchant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019B216B17D4DF0D2944623B /* Pods-MPQRMerchantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPQRMerchantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MPQRMerchantTests/Pods-MPQRMerchantTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F0F4D2C11B6663301C72931 /* Pods-MPQRMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPQRMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MPQRMerchant/Pods-MPQRMerchant.debug.xcconfig"; sourceTree = "<group>"; };
+		84D0C653DDA9A177D52A7F8D /* Pods-MPQRMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPQRMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-MPQRMerchant/Pods-MPQRMerchant.release.xcconfig"; sourceTree = "<group>"; };
+		8DE51AA465AF0842EBBD01DB /* Pods-MPQRMerchantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPQRMerchantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MPQRMerchantTests/Pods-MPQRMerchantTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADA4BA1B431B344C894086FA /* Pods_MPQRMerchantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPQRMerchantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C128DEB31FB14327009365DA /* TransactionDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionDetailViewController.h; sourceTree = "<group>"; };
+		C128DEB41FB14327009365DA /* TransactionDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailViewController.m; sourceTree = "<group>"; };
+		C128DEB51FB14327009365DA /* TransactionListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionListViewController.h; sourceTree = "<group>"; };
+		C128DEB61FB14327009365DA /* TransactionListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionListViewController.m; sourceTree = "<group>"; };
+		C128DEB91FB15792009365DA /* temp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = temp.storyboard; sourceTree = "<group>"; };
+		C128DEBC1FB16999009365DA /* SettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		C128DEBD1FB16999009365DA /* SettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		C128DEBE1FB16999009365DA /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		C128DEC11FB184AB009365DA /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		C128DEC21FB184AB009365DA /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		C128DEC41FB19CCE009365DA /* GenericInputDialogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericInputDialogViewController.h; sourceTree = "<group>"; };
+		C128DEC51FB19CCE009365DA /* GenericInputDialogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenericInputDialogViewController.m; sourceTree = "<group>"; };
+		C128DEC81FB1A100009365DA /* GenericRadioButtonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericRadioButtonTableViewCell.h; sourceTree = "<group>"; };
+		C128DEC91FB1A100009365DA /* GenericRadioButtonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenericRadioButtonTableViewCell.m; sourceTree = "<group>"; };
+		C128DECA1FB1A100009365DA /* GenericRadioButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericRadioButtonTableViewCell.xib; sourceTree = "<group>"; };
+		C128DECD1FB1AA3C009365DA /* GenericRadioButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericRadioButtonViewController.h; sourceTree = "<group>"; };
+		C128DECE1FB1AA3C009365DA /* GenericRadioButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenericRadioButtonViewController.m; sourceTree = "<group>"; };
+		C128DED01FB1AC92009365DA /* CountryCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryCode.h; sourceTree = "<group>"; };
+		C128DED11FB1AC92009365DA /* CountryCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryCode.m; sourceTree = "<group>"; };
+		C128DED31FB1BE69009365DA /* CreditCardFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditCardFormatter.h; sourceTree = "<group>"; };
+		C128DED41FB1BE69009365DA /* CreditCardFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditCardFormatter.m; sourceTree = "<group>"; };
+		C13E2D141FAAED6C0098DF2F /* LoginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
+		C13E2D151FAAED6C0098DF2F /* LoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
+		C13E2D181FAAED6C0098DF2F /* UserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		C13E2D191FAAED6C0098DF2F /* UserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		C13E2D1B1FAAED740098DF2F /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C13E2D1C1FAAED740098DF2F /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C13E2D1E1FAAEE0C0098DF2F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C13E2D1F1FAAEE0C0098DF2F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C13E2D261FAAEEC50098DF2F /* DialogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogViewController.h; sourceTree = "<group>"; };
+		C13E2D271FAAEEC60098DF2F /* DialogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogViewController.m; sourceTree = "<group>"; };
+		C13E2D4B1FAC64AE0098DF2F /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		C13E2D4C1FAC64AE0098DF2F /* Settings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		C13E2D4E1FAC650F0098DF2F /* QRData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRData.h; sourceTree = "<group>"; };
+		C13E2D4F1FAC650F0098DF2F /* QRData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRData.m; sourceTree = "<group>"; };
+		C13E2D521FAC68960098DF2F /* DataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		C13E2D531FAC6B0F0098DF2F /* RealmDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmDataSource.h; sourceTree = "<group>"; };
+		C13E2D541FAC6B0F0098DF2F /* RealmDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmDataSource.m; sourceTree = "<group>"; };
+		C13E2D571FAEFFC50098DF2F /* init.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = init.plist; sourceTree = "<group>"; };
+		C13E2D591FAF06760098DF2F /* PreferenceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferenceManager.h; sourceTree = "<group>"; };
+		C13E2D5A1FAF06760098DF2F /* PreferenceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferenceManager.m; sourceTree = "<group>"; };
+		C13E2D5C1FB014A00098DF2F /* Transaction.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Transaction.JSON; sourceTree = "<group>"; };
+		C13E2D5E1FB03F460098DF2F /* TipTypeDialogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipTypeDialogViewController.h; sourceTree = "<group>"; };
+		C13E2D5F1FB03F460098DF2F /* TipTypeDialogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipTypeDialogViewController.m; sourceTree = "<group>"; };
+		C13E2D641FB0408C0098DF2F /* TipTypeChooserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipTypeChooserTableViewCell.h; sourceTree = "<group>"; };
+		C13E2D651FB0408C0098DF2F /* TipTypeChooserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipTypeChooserTableViewCell.m; sourceTree = "<group>"; };
+		C13E2D661FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipTypeChooserTableViewCell.xib; sourceTree = "<group>"; };
+		C149F5FB1FB3130900644D68 /* TextImageButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextImageButton.h; sourceTree = "<group>"; };
+		C149F5FC1FB3130900644D68 /* TextImageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextImageButton.m; sourceTree = "<group>"; };
+		C17B00881FB0722A00461701 /* QRDisplayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRDisplayViewController.h; sourceTree = "<group>"; };
+		C17B00891FB0722A00461701 /* QRDisplayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRDisplayViewController.m; sourceTree = "<group>"; };
+		C1C077891FAAE80C00D26D8C /* MPQRMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPQRMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C0778C1FAAE80C00D26D8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1C0778D1FAAE80C00D26D8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1C0778F1FAAE80C00D26D8C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C1C077901FAAE80C00D26D8C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C1C077931FAAE80C00D26D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1C077951FAAE80C00D26D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1C077981FAAE80C00D26D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1C0779A1FAAE80C00D26D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C0779B1FAAE80C00D26D8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1C077A11FAAE80C00D26D8C /* MPQRMerchantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPQRMerchantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C077A51FAAE80C00D26D8C /* MPQRMerchantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPQRMerchantTests.m; sourceTree = "<group>"; };
+		C1C077A71FAAE80C00D26D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C077B11FAAEACD00D26D8C /* Merchant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Merchant.h; sourceTree = "<group>"; };
+		C1C077B21FAAEACD00D26D8C /* Merchant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Merchant.m; sourceTree = "<group>"; };
+		C1C077B31FAAEACD00D26D8C /* PaymentData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentData.h; sourceTree = "<group>"; };
+		C1C077B41FAAEACD00D26D8C /* PaymentData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentData.m; sourceTree = "<group>"; };
+		C1C077B51FAAEACD00D26D8C /* PaymentInstrument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentInstrument.h; sourceTree = "<group>"; };
+		C1C077B61FAAEACD00D26D8C /* PaymentInstrument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentInstrument.m; sourceTree = "<group>"; };
+		C1C077B71FAAEACD00D26D8C /* Receipt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
+		C1C077B81FAAEACD00D26D8C /* Receipt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
+		C1C077B91FAAEACD00D26D8C /* Transaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		C1C077BA1FAAEACD00D26D8C /* Transaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		C1C077BB1FAAEACD00D26D8C /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C1C077BC1FAAEACD00D26D8C /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C1C077BF1FAAEB5800D26D8C /* MPQRServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPQRServer.h; sourceTree = "<group>"; };
+		C1C077C01FAAEB5800D26D8C /* MPQRServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPQRServer.m; sourceTree = "<group>"; };
+		C1C077C11FAAEB5800D26D8C /* MPQRService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPQRService.h; sourceTree = "<group>"; };
+		C1C077C21FAAEB5800D26D8C /* MPQRService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPQRService.m; sourceTree = "<group>"; };
+		C1C077C41FAAEB5800D26D8C /* BaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
+		C1C077C51FAAEB5800D26D8C /* BaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
+		C1C077C61FAAEB5800D26D8C /* ChangeDefaultCardRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeDefaultCardRequest.h; sourceTree = "<group>"; };
+		C1C077C71FAAEB5800D26D8C /* ChangeDefaultCardRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeDefaultCardRequest.m; sourceTree = "<group>"; };
+		C1C077C81FAAEB5800D26D8C /* GetUserInfoRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetUserInfoRequest.h; sourceTree = "<group>"; };
+		C1C077C91FAAEB5800D26D8C /* GetUserInfoRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetUserInfoRequest.m; sourceTree = "<group>"; };
+		C1C077CA1FAAEB5800D26D8C /* LoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		C1C077CB1FAAEB5800D26D8C /* LoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
+		C1C077CC1FAAEB5800D26D8C /* LogoutRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogoutRequest.h; sourceTree = "<group>"; };
+		C1C077CD1FAAEB5800D26D8C /* LogoutRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogoutRequest.m; sourceTree = "<group>"; };
+		C1C077CE1FAAEB5800D26D8C /* MakePaymentRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakePaymentRequest.h; sourceTree = "<group>"; };
+		C1C077CF1FAAEB5800D26D8C /* MakePaymentRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakePaymentRequest.m; sourceTree = "<group>"; };
+		C1C077D01FAAEB5800D26D8C /* TransactionsRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionsRequest.h; sourceTree = "<group>"; };
+		C1C077D11FAAEB5800D26D8C /* TransactionsRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionsRequest.m; sourceTree = "<group>"; };
+		C1C077D31FAAEB5800D26D8C /* LoginResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginResponse.h; sourceTree = "<group>"; };
+		C1C077D41FAAEB5800D26D8C /* LoginResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginResponse.m; sourceTree = "<group>"; };
+		C1C077E01FAAEC1300D26D8C /* ColorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
+		C1C077E11FAAEC1300D26D8C /* ColorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
+		C1C077E41FAAEC1300D26D8C /* CurrencyFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyFormatter.h; sourceTree = "<group>"; };
+		C1C077E51FAAEC1300D26D8C /* CurrencyFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyFormatter.m; sourceTree = "<group>"; };
+		C1F021371FB29ACA00C16102 /* CreditCardInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditCardInputViewController.h; sourceTree = "<group>"; };
+		C1F021381FB29ACA00C16102 /* CreditCardInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditCardInputViewController.m; sourceTree = "<group>"; };
+		C1F0213A1FB2C1BF00C16102 /* CurrencyCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyCode.h; sourceTree = "<group>"; };
+		C1F0213B1FB2C1BF00C16102 /* CurrencyCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyCode.m; sourceTree = "<group>"; };
+		C1F0213D1FB2C44F00C16102 /* Currency.init */ = {isa = PBXFileReference; lastKnownFileType = text; path = Currency.init; sourceTree = "<group>"; };
+		CFDBF87494BF89E0CDCB9C3B /* Pods_MPQRMerchant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPQRMerchant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1C077861FAAE80C00D26D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF15098B31BB6801402741E8 /* Pods_MPQRMerchant.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C0779E1FAAE80C00D26D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D655B6A783F919F98E69518 /* Pods_MPQRMerchantTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		676E6A970331DE53B047D851 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F4D2C11B6663301C72931 /* Pods-MPQRMerchant.debug.xcconfig */,
+				84D0C653DDA9A177D52A7F8D /* Pods-MPQRMerchant.release.xcconfig */,
+				8DE51AA465AF0842EBBD01DB /* Pods-MPQRMerchantTests.debug.xcconfig */,
+				019B216B17D4DF0D2944623B /* Pods-MPQRMerchantTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C128DEB21FB14327009365DA /* TransactionHistory */ = {
+			isa = PBXGroup;
+			children = (
+				C128DEB31FB14327009365DA /* TransactionDetailViewController.h */,
+				C128DEB41FB14327009365DA /* TransactionDetailViewController.m */,
+				C128DEB51FB14327009365DA /* TransactionListViewController.h */,
+				C128DEB61FB14327009365DA /* TransactionListViewController.m */,
+			);
+			path = TransactionHistory;
+			sourceTree = "<group>";
+		};
+		C128DEBB1FB16948009365DA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C128DEBC1FB16999009365DA /* SettingTableViewCell.h */,
+				C128DEBD1FB16999009365DA /* SettingTableViewCell.m */,
+				C128DEBE1FB16999009365DA /* SettingTableViewCell.xib */,
+				C128DEC11FB184AB009365DA /* SettingViewController.h */,
+				C128DEC21FB184AB009365DA /* SettingViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C128DEC71FB1A00C009365DA /* GenericRadioButtonChooser */ = {
+			isa = PBXGroup;
+			children = (
+				C128DEC81FB1A100009365DA /* GenericRadioButtonTableViewCell.h */,
+				C128DEC91FB1A100009365DA /* GenericRadioButtonTableViewCell.m */,
+				C128DECA1FB1A100009365DA /* GenericRadioButtonTableViewCell.xib */,
+				C128DECD1FB1AA3C009365DA /* GenericRadioButtonViewController.h */,
+				C128DECE1FB1AA3C009365DA /* GenericRadioButtonViewController.m */,
+			);
+			path = GenericRadioButtonChooser;
+			sourceTree = "<group>";
+		};
+		C13E2D131FAAED6C0098DF2F /* AppManagers */ = {
+			isa = PBXGroup;
+			children = (
+				C13E2D141FAAED6C0098DF2F /* LoginManager.h */,
+				C13E2D151FAAED6C0098DF2F /* LoginManager.m */,
+				C13E2D181FAAED6C0098DF2F /* UserManager.h */,
+				C13E2D191FAAED6C0098DF2F /* UserManager.m */,
+				C13E2D591FAF06760098DF2F /* PreferenceManager.h */,
+				C13E2D5A1FAF06760098DF2F /* PreferenceManager.m */,
+			);
+			path = AppManagers;
+			sourceTree = "<group>";
+		};
+		C13E2D1A1FAAED740098DF2F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C13E2D1B1FAAED740098DF2F /* LoginViewController.h */,
+				C13E2D1C1FAAED740098DF2F /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C13E2D1D1FAAEE0C0098DF2F /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				C13E2D1E1FAAEE0C0098DF2F /* BaseViewController.h */,
+				C13E2D1F1FAAEE0C0098DF2F /* BaseViewController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		C13E2D251FAAEEC50098DF2F /* CustomDialogUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C128DEC71FB1A00C009365DA /* GenericRadioButtonChooser */,
+				C13E2D621FB03FD00098DF2F /* TipTypeChooser */,
+				C13E2D261FAAEEC50098DF2F /* DialogViewController.h */,
+				C13E2D271FAAEEC60098DF2F /* DialogViewController.m */,
+				C128DEC41FB19CCE009365DA /* GenericInputDialogViewController.h */,
+				C128DEC51FB19CCE009365DA /* GenericInputDialogViewController.m */,
+				C1F021371FB29ACA00C16102 /* CreditCardInputViewController.h */,
+				C1F021381FB29ACA00C16102 /* CreditCardInputViewController.m */,
+			);
+			path = CustomDialogUtils;
+			sourceTree = "<group>";
+		};
+		C13E2D511FAC68750098DF2F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C1C077B01FAAEACD00D26D8C /* Model */,
+				C13E2D521FAC68960098DF2F /* DataSource.h */,
+				C13E2D531FAC6B0F0098DF2F /* RealmDataSource.h */,
+				C13E2D541FAC6B0F0098DF2F /* RealmDataSource.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C13E2D561FAEFFA90098DF2F /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				C13E2D571FAEFFC50098DF2F /* init.plist */,
+				C13E2D5C1FB014A00098DF2F /* Transaction.JSON */,
+				C1F0213D1FB2C44F00C16102 /* Currency.init */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
+		C13E2D621FB03FD00098DF2F /* TipTypeChooser */ = {
+			isa = PBXGroup;
+			children = (
+				C13E2D5E1FB03F460098DF2F /* TipTypeDialogViewController.h */,
+				C13E2D5F1FB03F460098DF2F /* TipTypeDialogViewController.m */,
+				C13E2D641FB0408C0098DF2F /* TipTypeChooserTableViewCell.h */,
+				C13E2D651FB0408C0098DF2F /* TipTypeChooserTableViewCell.m */,
+				C13E2D661FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib */,
+			);
+			path = TipTypeChooser;
+			sourceTree = "<group>";
+		};
+		C13E2D691FB06E730098DF2F /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				C17B00881FB0722A00461701 /* QRDisplayViewController.h */,
+				C17B00891FB0722A00461701 /* QRDisplayViewController.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		C149F5FA1FB312CB00644D68 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				C149F5FB1FB3130900644D68 /* TextImageButton.h */,
+				C149F5FC1FB3130900644D68 /* TextImageButton.m */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		C1C077801FAAE80C00D26D8C = {
+			isa = PBXGroup;
+			children = (
+				C1C0778B1FAAE80C00D26D8C /* MPQRMerchant */,
+				C1C077A41FAAE80C00D26D8C /* MPQRMerchantTests */,
+				C1C0778A1FAAE80C00D26D8C /* Products */,
+				676E6A970331DE53B047D851 /* Pods */,
+				D49B181483CF75A3E69BA7C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1C0778A1FAAE80C00D26D8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1C077891FAAE80C00D26D8C /* MPQRMerchant.app */,
+				C1C077A11FAAE80C00D26D8C /* MPQRMerchantTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1C0778B1FAAE80C00D26D8C /* MPQRMerchant */ = {
+			isa = PBXGroup;
+			children = (
+				C149F5FA1FB312CB00644D68 /* CustomButton */,
+				C128DEBB1FB16948009365DA /* Setting */,
+				C128DEB21FB14327009365DA /* TransactionHistory */,
+				C13E2D691FB06E730098DF2F /* QRCode */,
+				C13E2D251FAAEEC50098DF2F /* CustomDialogUtils */,
+				C13E2D1D1FAAEE0C0098DF2F /* BaseClass */,
+				C13E2D1A1FAAED740098DF2F /* Login */,
+				C13E2D131FAAED6C0098DF2F /* AppManagers */,
+				C1C077DF1FAAEC1300D26D8C /* Utils */,
+				C1C077BD1FAAEB5800D26D8C /* Netwrok */,
+				C13E2D511FAC68750098DF2F /* Data */,
+				C1C0778D1FAAE80C00D26D8C /* AppDelegate.m */,
+				C1C0778C1FAAE80C00D26D8C /* AppDelegate.h */,
+				C1C0778F1FAAE80C00D26D8C /* MainViewController.h */,
+				C1C077901FAAE80C00D26D8C /* MainViewController.m */,
+				C128DEB91FB15792009365DA /* temp.storyboard */,
+				C1C077921FAAE80C00D26D8C /* Main.storyboard */,
+				C1C077951FAAE80C00D26D8C /* Assets.xcassets */,
+				C1C077971FAAE80C00D26D8C /* LaunchScreen.storyboard */,
+				C1C0779A1FAAE80C00D26D8C /* Info.plist */,
+				C1C0779B1FAAE80C00D26D8C /* main.m */,
+			);
+			path = MPQRMerchant;
+			sourceTree = "<group>";
+		};
+		C1C077A41FAAE80C00D26D8C /* MPQRMerchantTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1C077A51FAAE80C00D26D8C /* MPQRMerchantTests.m */,
+				C1C077A71FAAE80C00D26D8C /* Info.plist */,
+			);
+			path = MPQRMerchantTests;
+			sourceTree = "<group>";
+		};
+		C1C077B01FAAEACD00D26D8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1C077B11FAAEACD00D26D8C /* Merchant.h */,
+				C1C077B21FAAEACD00D26D8C /* Merchant.m */,
+				C1C077B31FAAEACD00D26D8C /* PaymentData.h */,
+				C1C077B41FAAEACD00D26D8C /* PaymentData.m */,
+				C1C077B51FAAEACD00D26D8C /* PaymentInstrument.h */,
+				C1C077B61FAAEACD00D26D8C /* PaymentInstrument.m */,
+				C1C077B71FAAEACD00D26D8C /* Receipt.h */,
+				C1C077B81FAAEACD00D26D8C /* Receipt.m */,
+				C1C077B91FAAEACD00D26D8C /* Transaction.h */,
+				C1C077BA1FAAEACD00D26D8C /* Transaction.m */,
+				C1C077BB1FAAEACD00D26D8C /* User.h */,
+				C1C077BC1FAAEACD00D26D8C /* User.m */,
+				C13E2D4B1FAC64AE0098DF2F /* Settings.h */,
+				C13E2D4C1FAC64AE0098DF2F /* Settings.m */,
+				C13E2D4E1FAC650F0098DF2F /* QRData.h */,
+				C13E2D4F1FAC650F0098DF2F /* QRData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1C077BD1FAAEB5800D26D8C /* Netwrok */ = {
+			isa = PBXGroup;
+			children = (
+				C13E2D561FAEFFA90098DF2F /* Init */,
+				C1C077BE1FAAEB5800D26D8C /* MockServer */,
+				C1C077C11FAAEB5800D26D8C /* MPQRService.h */,
+				C1C077C21FAAEB5800D26D8C /* MPQRService.m */,
+				C1C077C31FAAEB5800D26D8C /* Request */,
+				C1C077D21FAAEB5800D26D8C /* Response */,
+			);
+			path = Netwrok;
+			sourceTree = "<group>";
+		};
+		C1C077BE1FAAEB5800D26D8C /* MockServer */ = {
+			isa = PBXGroup;
+			children = (
+				C1C077BF1FAAEB5800D26D8C /* MPQRServer.h */,
+				C1C077C01FAAEB5800D26D8C /* MPQRServer.m */,
+			);
+			path = MockServer;
+			sourceTree = "<group>";
+		};
+		C1C077C31FAAEB5800D26D8C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C1C077C41FAAEB5800D26D8C /* BaseRequest.h */,
+				C1C077C51FAAEB5800D26D8C /* BaseRequest.m */,
+				C1C077C61FAAEB5800D26D8C /* ChangeDefaultCardRequest.h */,
+				C1C077C71FAAEB5800D26D8C /* ChangeDefaultCardRequest.m */,
+				C1C077C81FAAEB5800D26D8C /* GetUserInfoRequest.h */,
+				C1C077C91FAAEB5800D26D8C /* GetUserInfoRequest.m */,
+				C1C077CA1FAAEB5800D26D8C /* LoginRequest.h */,
+				C1C077CB1FAAEB5800D26D8C /* LoginRequest.m */,
+				C1C077CC1FAAEB5800D26D8C /* LogoutRequest.h */,
+				C1C077CD1FAAEB5800D26D8C /* LogoutRequest.m */,
+				C1C077CE1FAAEB5800D26D8C /* MakePaymentRequest.h */,
+				C1C077CF1FAAEB5800D26D8C /* MakePaymentRequest.m */,
+				C1C077D01FAAEB5800D26D8C /* TransactionsRequest.h */,
+				C1C077D11FAAEB5800D26D8C /* TransactionsRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C1C077D21FAAEB5800D26D8C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C1C077D31FAAEB5800D26D8C /* LoginResponse.h */,
+				C1C077D41FAAEB5800D26D8C /* LoginResponse.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C1C077DF1FAAEC1300D26D8C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C1C077E01FAAEC1300D26D8C /* ColorManager.h */,
+				C1C077E11FAAEC1300D26D8C /* ColorManager.m */,
+				C1C077E41FAAEC1300D26D8C /* CurrencyFormatter.h */,
+				C1C077E51FAAEC1300D26D8C /* CurrencyFormatter.m */,
+				C128DED31FB1BE69009365DA /* CreditCardFormatter.h */,
+				C128DED41FB1BE69009365DA /* CreditCardFormatter.m */,
+				C128DED01FB1AC92009365DA /* CountryCode.h */,
+				C128DED11FB1AC92009365DA /* CountryCode.m */,
+				C1F0213A1FB2C1BF00C16102 /* CurrencyCode.h */,
+				C1F0213B1FB2C1BF00C16102 /* CurrencyCode.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D49B181483CF75A3E69BA7C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFDBF87494BF89E0CDCB9C3B /* Pods_MPQRMerchant.framework */,
+				ADA4BA1B431B344C894086FA /* Pods_MPQRMerchantTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1C077881FAAE80C00D26D8C /* MPQRMerchant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1C077AA1FAAE80C00D26D8C /* Build configuration list for PBXNativeTarget "MPQRMerchant" */;
+			buildPhases = (
+				7EA7400EDE66776CAE06A34E /* [CP] Check Pods Manifest.lock */,
+				C1C077851FAAE80C00D26D8C /* Sources */,
+				C1C077861FAAE80C00D26D8C /* Frameworks */,
+				C1C077871FAAE80C00D26D8C /* Resources */,
+				4D27283E221D2FD5BFC30262 /* [CP] Embed Pods Frameworks */,
+				D97F82F68DFEBFF2129D88A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPQRMerchant;
+			productName = MPQRMerchant;
+			productReference = C1C077891FAAE80C00D26D8C /* MPQRMerchant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1C077A01FAAE80C00D26D8C /* MPQRMerchantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1C077AD1FAAE80C00D26D8C /* Build configuration list for PBXNativeTarget "MPQRMerchantTests" */;
+			buildPhases = (
+				C35AAED569C325B58371DB93 /* [CP] Check Pods Manifest.lock */,
+				C1C0779D1FAAE80C00D26D8C /* Sources */,
+				C1C0779E1FAAE80C00D26D8C /* Frameworks */,
+				C1C0779F1FAAE80C00D26D8C /* Resources */,
+				5B46062E229CB5DC3F0794BF /* [CP] Embed Pods Frameworks */,
+				9AB939FBCC0A4C4357179A3B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1C077A31FAAE80C00D26D8C /* PBXTargetDependency */,
+			);
+			name = MPQRMerchantTests;
+			productName = MPQRMerchantTests;
+			productReference = C1C077A11FAAE80C00D26D8C /* MPQRMerchantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1C077811FAAE80C00D26D8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Muchamad Chozinul Amri";
+				TargetAttributes = {
+					C1C077881FAAE80C00D26D8C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					C1C077A01FAAE80C00D26D8C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1C077881FAAE80C00D26D8C;
+					};
+				};
+			};
+			buildConfigurationList = C1C077841FAAE80C00D26D8C /* Build configuration list for PBXProject "MPQRMerchant" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1C077801FAAE80C00D26D8C;
+			productRefGroup = C1C0778A1FAAE80C00D26D8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1C077881FAAE80C00D26D8C /* MPQRMerchant */,
+				C1C077A01FAAE80C00D26D8C /* MPQRMerchantTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1C077871FAAE80C00D26D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C13E2D581FAEFFC50098DF2F /* init.plist in Resources */,
+				C1C077991FAAE80C00D26D8C /* LaunchScreen.storyboard in Resources */,
+				C128DEC01FB16999009365DA /* SettingTableViewCell.xib in Resources */,
+				C13E2D5D1FB014A10098DF2F /* Transaction.JSON in Resources */,
+				C13E2D681FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib in Resources */,
+				C1C077961FAAE80C00D26D8C /* Assets.xcassets in Resources */,
+				C1F0213E1FB2C44F00C16102 /* Currency.init in Resources */,
+				C128DECC1FB1A100009365DA /* GenericRadioButtonTableViewCell.xib in Resources */,
+				C1C077941FAAE80C00D26D8C /* Main.storyboard in Resources */,
+				C128DEBA1FB15792009365DA /* temp.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C0779F1FAAE80C00D26D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D27283E221D2FD5BFC30262 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MPQRMerchant/Pods-MPQRMerchant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${PODS_ROOT}/../../Version2/mpqr_scanner_test_swift/coresdk/build/ios/package-2.0.3/Frameworks/MasterpassQRCoreSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialTextField/MaterialTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MasterpassQRCoreSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MPQRMerchant/Pods-MPQRMerchant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B46062E229CB5DC3F0794BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MPQRMerchantTests/Pods-MPQRMerchantTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA7400EDE66776CAE06A34E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPQRMerchant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AB939FBCC0A4C4357179A3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MPQRMerchantTests/Pods-MPQRMerchantTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C35AAED569C325B58371DB93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPQRMerchantTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97F82F68DFEBFF2129D88A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MPQRMerchant/Pods-MPQRMerchant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1C077851FAAE80C00D26D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1C077E81FAAEC4300D26D8C /* Receipt.m in Sources */,
+				C17B008A1FB0722A00461701 /* QRDisplayViewController.m in Sources */,
+				C13E2D221FAAEEA10098DF2F /* LoginManager.m in Sources */,
+				C1F0213C1FB2C1BF00C16102 /* CurrencyCode.m in Sources */,
+				C13E2D211FAAEE9D0098DF2F /* BaseViewController.m in Sources */,
+				C13E2D201FAAEE9A0098DF2F /* LoginViewController.m in Sources */,
+				C128DEB71FB143E6009365DA /* TransactionListViewController.m in Sources */,
+				C128DEB81FB143E9009365DA /* TransactionDetailViewController.m in Sources */,
+				C1C077911FAAE80C00D26D8C /* MainViewController.m in Sources */,
+				C13E2D5B1FAF06760098DF2F /* PreferenceManager.m in Sources */,
+				C1C077DB1FAAEB8700D26D8C /* LogoutRequest.m in Sources */,
+				C1C077EE1FAAEC6000D26D8C /* CurrencyFormatter.m in Sources */,
+				C1C077DE1FAAEB9300D26D8C /* LoginResponse.m in Sources */,
+				C1C077EA1FAAEC4800D26D8C /* PaymentData.m in Sources */,
+				C1C077E71FAAEC4000D26D8C /* Transaction.m in Sources */,
+				C13E2D241FAAEEA60098DF2F /* UserManager.m in Sources */,
+				C1C077DD1FAAEB8D00D26D8C /* TransactionsRequest.m in Sources */,
+				C1C077EC1FAAEC5B00D26D8C /* ColorManager.m in Sources */,
+				C1C0779C1FAAE80C00D26D8C /* main.m in Sources */,
+				C1C077DC1FAAEB8A00D26D8C /* MakePaymentRequest.m in Sources */,
+				C128DED51FB1BE69009365DA /* CreditCardFormatter.m in Sources */,
+				C128DECB1FB1A100009365DA /* GenericRadioButtonTableViewCell.m in Sources */,
+				C13E2D601FB03F460098DF2F /* TipTypeDialogViewController.m in Sources */,
+				C13E2D501FAC650F0098DF2F /* QRData.m in Sources */,
+				C13E2D331FAAEED80098DF2F /* DialogViewController.m in Sources */,
+				C1C077D51FAAEB6800D26D8C /* MPQRServer.m in Sources */,
+				C1C077D91FAAEB8200D26D8C /* GetUserInfoRequest.m in Sources */,
+				C13E2D4D1FAC64AE0098DF2F /* Settings.m in Sources */,
+				C1C077E61FAAEC3D00D26D8C /* User.m in Sources */,
+				C128DEBF1FB16999009365DA /* SettingTableViewCell.m in Sources */,
+				C128DECF1FB1AA3C009365DA /* GenericRadioButtonViewController.m in Sources */,
+				C128DEC61FB19CCE009365DA /* GenericInputDialogViewController.m in Sources */,
+				C1C0778E1FAAE80C00D26D8C /* AppDelegate.m in Sources */,
+				C149F5FD1FB3130900644D68 /* TextImageButton.m in Sources */,
+				C1C077D71FAAEB6F00D26D8C /* BaseRequest.m in Sources */,
+				C1C077EB1FAAEC4B00D26D8C /* Merchant.m in Sources */,
+				C1C077DA1FAAEB8500D26D8C /* LoginRequest.m in Sources */,
+				C13E2D551FAC6B0F0098DF2F /* RealmDataSource.m in Sources */,
+				C1C077D81FAAEB7F00D26D8C /* ChangeDefaultCardRequest.m in Sources */,
+				C128DED21FB1AC92009365DA /* CountryCode.m in Sources */,
+				C1F021391FB29ACA00C16102 /* CreditCardInputViewController.m in Sources */,
+				C13E2D671FB0408C0098DF2F /* TipTypeChooserTableViewCell.m in Sources */,
+				C1C077D61FAAEB6B00D26D8C /* MPQRService.m in Sources */,
+				C128DEC31FB184AB009365DA /* SettingViewController.m in Sources */,
+				C1C077E91FAAEC4500D26D8C /* PaymentInstrument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C0779D1FAAE80C00D26D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1C077A61FAAE80C00D26D8C /* MPQRMerchantTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1C077A31FAAE80C00D26D8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1C077881FAAE80C00D26D8C /* MPQRMerchant */;
+			targetProxy = C1C077A21FAAE80C00D26D8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1C077921FAAE80C00D26D8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1C077931FAAE80C00D26D8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1C077971FAAE80C00D26D8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1C077981FAAE80C00D26D8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1C077A81FAAE80C00D26D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C1C077A91FAAE80C00D26D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1C077AB1FAAE80C00D26D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0F4D2C11B6663301C72931 /* Pods-MPQRMerchant.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T73B6L4GQ;
+				INFOPLIST_FILE = MPQRMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mastercard.iOSMPQRMerchant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1C077AC1FAAE80C00D26D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D0C653DDA9A177D52A7F8D /* Pods-MPQRMerchant.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9T73B6L4GQ;
+				INFOPLIST_FILE = MPQRMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mastercard.iOSMPQRMerchant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1C077AE1FAAE80C00D26D8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE51AA465AF0842EBBD01DB /* Pods-MPQRMerchantTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FARWN7FEXX;
+				INFOPLIST_FILE = MPQRMerchantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mastercard.ios.MPQRMerchantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MPQRMerchant.app/MPQRMerchant";
+			};
+			name = Debug;
+		};
+		C1C077AF1FAAE80C00D26D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019B216B17D4DF0D2944623B /* Pods-MPQRMerchantTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FARWN7FEXX;
+				INFOPLIST_FILE = MPQRMerchantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mastercard.ios.MPQRMerchantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MPQRMerchant.app/MPQRMerchant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1C077841FAAE80C00D26D8C /* Build configuration list for PBXProject "MPQRMerchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1C077A81FAAE80C00D26D8C /* Debug */,
+				C1C077A91FAAE80C00D26D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1C077AA1FAAE80C00D26D8C /* Build configuration list for PBXNativeTarget "MPQRMerchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1C077AB1FAAE80C00D26D8C /* Debug */,
+				C1C077AC1FAAE80C00D26D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1C077AD1FAAE80C00D26D8C /* Build configuration list for PBXNativeTarget "MPQRMerchantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1C077AE1FAAE80C00D26D8C /* Debug */,
+				C1C077AF1FAAE80C00D26D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1C077811FAAE80C00D26D8C /* Project object */;
+}
