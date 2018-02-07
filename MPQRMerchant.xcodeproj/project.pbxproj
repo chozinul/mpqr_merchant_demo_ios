@@ -10,6 +10,7 @@
 		0D655B6A783F919F98E69518 /* Pods_MPQRMerchantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA4BA1B431B344C894086FA /* Pods_MPQRMerchantTests.framework */; };
 		C128DEB71FB143E6009365DA /* TransactionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEB61FB14327009365DA /* TransactionListViewController.m */; };
 		C128DEB81FB143E9009365DA /* TransactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEB41FB14327009365DA /* TransactionDetailViewController.m */; };
+		C128DEBA1FB15792009365DA /* temp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C128DEB91FB15792009365DA /* temp.storyboard */; };
 		C128DEBF1FB16999009365DA /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEBD1FB16999009365DA /* SettingTableViewCell.m */; };
 		C128DEC01FB16999009365DA /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C128DEBE1FB16999009365DA /* SettingTableViewCell.xib */; };
 		C128DEC31FB184AB009365DA /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEC21FB184AB009365DA /* SettingViewController.m */; };
@@ -35,6 +36,16 @@
 		C13E2D681FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13E2D661FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib */; };
 		C149F5FD1FB3130900644D68 /* TextImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C149F5FC1FB3130900644D68 /* TextImageButton.m */; };
 		C17B008A1FB0722A00461701 /* QRDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C17B00891FB0722A00461701 /* QRDisplayViewController.m */; };
+		C181B25D201EC79800FDA7B5 /* CCTLogActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181B25C201EC79800FDA7B5 /* CCTLogActivity.swift */; };
+		C181B260201ED05E00FDA7B5 /* CCTNotificationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C181B25F201ED05D00FDA7B5 /* CCTNotificationAppDelegate.m */; };
+		C181B267201EF21F00FDA7B5 /* CCTNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C181B266201EF21F00FDA7B5 /* CCTNotificationManager.m */; };
+		C181B26A201EF29000FDA7B5 /* CCTNotificationManagerFireBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C181B269201EF29000FDA7B5 /* CCTNotificationManagerFireBase.m */; };
+		C181B26D201F0F4600FDA7B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C181B26C201F0F4500FDA7B5 /* GoogleService-Info.plist */; };
+		C181B271201F298E00FDA7B5 /* CCTFireBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C181B270201F298E00FDA7B5 /* CCTFireBaseAppDelegate.m */; };
+		C181B29720205C3F00FDA7B5 /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C181B29620205C3E00FDA7B5 /* ReceiptViewController.m */; };
+		C181B29A20205C5C00FDA7B5 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = C181B29820205C5C00FDA7B5 /* Receipt.m */; };
+		C181B29E20205D3800FDA7B5 /* CCTReceiptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C181B29D20205D3800FDA7B5 /* CCTReceiptManager.m */; };
+		C181B2A120205EB600FDA7B5 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C181B29F20205EB600FDA7B5 /* Payment.storyboard */; };
 		C181B3212021628400FDA7B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C181B3202021628400FDA7B5 /* AudioToolbox.framework */; };
 		C1C0778E1FAAE80C00D26D8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C0778D1FAAE80C00D26D8C /* AppDelegate.m */; };
 		C1C077911FAAE80C00D26D8C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077901FAAE80C00D26D8C /* MainViewController.m */; };
@@ -82,6 +93,7 @@
 		C128DEB41FB14327009365DA /* TransactionDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailViewController.m; sourceTree = "<group>"; };
 		C128DEB51FB14327009365DA /* TransactionListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionListViewController.h; sourceTree = "<group>"; };
 		C128DEB61FB14327009365DA /* TransactionListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionListViewController.m; sourceTree = "<group>"; };
+		C128DEB91FB15792009365DA /* temp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = temp.storyboard; sourceTree = "<group>"; };
 		C128DEBC1FB16999009365DA /* SettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
 		C128DEBD1FB16999009365DA /* SettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
 		C128DEBE1FB16999009365DA /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
@@ -128,7 +140,26 @@
 		C149F5FC1FB3130900644D68 /* TextImageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextImageButton.m; sourceTree = "<group>"; };
 		C17B00881FB0722A00461701 /* QRDisplayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRDisplayViewController.h; sourceTree = "<group>"; };
 		C17B00891FB0722A00461701 /* QRDisplayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRDisplayViewController.m; sourceTree = "<group>"; };
+		C181B25B201EC79800FDA7B5 /* MPQRMerchant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MPQRMerchant-Bridging-Header.h"; sourceTree = "<group>"; };
+		C181B25C201EC79800FDA7B5 /* CCTLogActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTLogActivity.swift; sourceTree = "<group>"; };
+		C181B25E201ED05D00FDA7B5 /* CCTNotificationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTNotificationAppDelegate.h; sourceTree = "<group>"; };
+		C181B25F201ED05D00FDA7B5 /* CCTNotificationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTNotificationAppDelegate.m; sourceTree = "<group>"; };
 		C181B261201EEE9C00FDA7B5 /* MPQRMerchant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MPQRMerchant.entitlements; sourceTree = "<group>"; };
+		C181B262201EF0BC00FDA7B5 /* CCTNotificationTokenHandlerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTNotificationTokenHandlerProtocol.h; sourceTree = "<group>"; };
+		C181B265201EF21F00FDA7B5 /* CCTNotificationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTNotificationManager.h; sourceTree = "<group>"; };
+		C181B266201EF21F00FDA7B5 /* CCTNotificationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTNotificationManager.m; sourceTree = "<group>"; };
+		C181B268201EF29000FDA7B5 /* CCTNotificationManagerFireBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTNotificationManagerFireBase.h; sourceTree = "<group>"; };
+		C181B269201EF29000FDA7B5 /* CCTNotificationManagerFireBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTNotificationManagerFireBase.m; sourceTree = "<group>"; };
+		C181B26C201F0F4500FDA7B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C181B26F201F298E00FDA7B5 /* CCTFireBaseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTFireBaseAppDelegate.h; sourceTree = "<group>"; };
+		C181B270201F298E00FDA7B5 /* CCTFireBaseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTFireBaseAppDelegate.m; sourceTree = "<group>"; };
+		C181B29520205C3E00FDA7B5 /* ReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptViewController.h; sourceTree = "<group>"; };
+		C181B29620205C3E00FDA7B5 /* ReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptViewController.m; sourceTree = "<group>"; };
+		C181B29820205C5C00FDA7B5 /* Receipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
+		C181B29920205C5C00FDA7B5 /* Receipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
+		C181B29C20205D3800FDA7B5 /* CCTReceiptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTReceiptManager.h; sourceTree = "<group>"; };
+		C181B29D20205D3800FDA7B5 /* CCTReceiptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTReceiptManager.m; sourceTree = "<group>"; };
+		C181B2A020205EB600FDA7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Payment.storyboard; sourceTree = "<group>"; };
 		C181B3202021628400FDA7B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C1C077891FAAE80C00D26D8C /* MPQRMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPQRMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C0778C1FAAE80C00D26D8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -342,6 +373,55 @@
 			path = CustomButton;
 			sourceTree = "<group>";
 		};
+		C181B25A201EC71200FDA7B5 /* Money2020 */ = {
+			isa = PBXGroup;
+			children = (
+				C181B29B20205CFF00FDA7B5 /* Receipt */,
+				C181B26E201F0F6700FDA7B5 /* Config */,
+				C181B26B201F0AC700FDA7B5 /* APNS */,
+				C181B25C201EC79800FDA7B5 /* CCTLogActivity.swift */,
+				C181B25B201EC79800FDA7B5 /* MPQRMerchant-Bridging-Header.h */,
+				C181B25E201ED05D00FDA7B5 /* CCTNotificationAppDelegate.h */,
+				C181B25F201ED05D00FDA7B5 /* CCTNotificationAppDelegate.m */,
+				C181B26F201F298E00FDA7B5 /* CCTFireBaseAppDelegate.h */,
+				C181B270201F298E00FDA7B5 /* CCTFireBaseAppDelegate.m */,
+			);
+			path = Money2020;
+			sourceTree = "<group>";
+		};
+		C181B26B201F0AC700FDA7B5 /* APNS */ = {
+			isa = PBXGroup;
+			children = (
+				C181B262201EF0BC00FDA7B5 /* CCTNotificationTokenHandlerProtocol.h */,
+				C181B265201EF21F00FDA7B5 /* CCTNotificationManager.h */,
+				C181B266201EF21F00FDA7B5 /* CCTNotificationManager.m */,
+				C181B268201EF29000FDA7B5 /* CCTNotificationManagerFireBase.h */,
+				C181B269201EF29000FDA7B5 /* CCTNotificationManagerFireBase.m */,
+			);
+			path = APNS;
+			sourceTree = "<group>";
+		};
+		C181B26E201F0F6700FDA7B5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C181B26C201F0F4500FDA7B5 /* GoogleService-Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C181B29B20205CFF00FDA7B5 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				C181B29520205C3E00FDA7B5 /* ReceiptViewController.h */,
+				C181B29620205C3E00FDA7B5 /* ReceiptViewController.m */,
+				C181B29920205C5C00FDA7B5 /* Receipt.h */,
+				C181B29820205C5C00FDA7B5 /* Receipt.m */,
+				C181B29C20205D3800FDA7B5 /* CCTReceiptManager.h */,
+				C181B29D20205D3800FDA7B5 /* CCTReceiptManager.m */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
 		C1C077801FAAE80C00D26D8C = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				C181B261201EEE9C00FDA7B5 /* MPQRMerchant.entitlements */,
+				C181B25A201EC71200FDA7B5 /* Money2020 */,
 				C149F5FA1FB312CB00644D68 /* CustomButton */,
 				C128DEBB1FB16948009365DA /* Setting */,
 				C128DEB21FB14327009365DA /* TransactionHistory */,
@@ -381,6 +462,8 @@
 				C1C0778D1FAAE80C00D26D8C /* AppDelegate.m */,
 				C1C0778F1FAAE80C00D26D8C /* MainViewController.h */,
 				C1C077901FAAE80C00D26D8C /* MainViewController.m */,
+				C128DEB91FB15792009365DA /* temp.storyboard */,
+				C181B29F20205EB600FDA7B5 /* Payment.storyboard */,
 				C1C077921FAAE80C00D26D8C /* Main.storyboard */,
 				C1C077951FAAE80C00D26D8C /* Assets.xcassets */,
 				C1C077971FAAE80C00D26D8C /* LaunchScreen.storyboard */,
@@ -596,7 +679,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13E2D581FAEFFC50098DF2F /* init.plist in Resources */,
+				C181B26D201F0F4600FDA7B5 /* GoogleService-Info.plist in Resources */,
 				C1C077991FAAE80C00D26D8C /* LaunchScreen.storyboard in Resources */,
+				C181B2A120205EB600FDA7B5 /* Payment.storyboard in Resources */,
 				C128DEC01FB16999009365DA /* SettingTableViewCell.xib in Resources */,
 				C13E2D5D1FB014A10098DF2F /* Transaction.JSON in Resources */,
 				C13E2D681FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib in Resources */,
@@ -604,6 +689,7 @@
 				C1F0213E1FB2C44F00C16102 /* Currency.init in Resources */,
 				C128DECC1FB1A100009365DA /* GenericRadioButtonTableViewCell.xib in Resources */,
 				C1C077941FAAE80C00D26D8C /* Main.storyboard in Resources */,
+				C128DEBA1FB15792009365DA /* temp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,7 +824,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17B008A1FB0722A00461701 /* QRDisplayViewController.m in Sources */,
+				C181B25D201EC79800FDA7B5 /* CCTLogActivity.swift in Sources */,
 				C13E2D221FAAEEA10098DF2F /* LoginManager.m in Sources */,
+				C181B260201ED05E00FDA7B5 /* CCTNotificationAppDelegate.m in Sources */,
 				C1F0213C1FB2C1BF00C16102 /* CurrencyCode.m in Sources */,
 				C13E2D211FAAEE9D0098DF2F /* BaseViewController.m in Sources */,
 				C13E2D201FAAEE9A0098DF2F /* LoginViewController.m in Sources */,
@@ -750,7 +838,9 @@
 				C1C077EE1FAAEC6000D26D8C /* CurrencyFormatter.m in Sources */,
 				C1C077DE1FAAEB9300D26D8C /* LoginResponse.m in Sources */,
 				C1C077E71FAAEC4000D26D8C /* Transaction.m in Sources */,
+				C181B29720205C3F00FDA7B5 /* ReceiptViewController.m in Sources */,
 				C13E2D241FAAEEA60098DF2F /* UserManager.m in Sources */,
+				C181B267201EF21F00FDA7B5 /* CCTNotificationManager.m in Sources */,
 				C1C077DD1FAAEB8D00D26D8C /* TransactionsRequest.m in Sources */,
 				C1C077EC1FAAEC5B00D26D8C /* ColorManager.m in Sources */,
 				C1C0779C1FAAE80C00D26D8C /* main.m in Sources */,
@@ -766,6 +856,7 @@
 				C128DEBF1FB16999009365DA /* SettingTableViewCell.m in Sources */,
 				C128DECF1FB1AA3C009365DA /* GenericRadioButtonViewController.m in Sources */,
 				C128DEC61FB19CCE009365DA /* GenericInputDialogViewController.m in Sources */,
+				C181B271201F298E00FDA7B5 /* CCTFireBaseAppDelegate.m in Sources */,
 				C1C0778E1FAAE80C00D26D8C /* AppDelegate.m in Sources */,
 				C149F5FD1FB3130900644D68 /* TextImageButton.m in Sources */,
 				C1C077D71FAAEB6F00D26D8C /* BaseRequest.m in Sources */,
@@ -774,9 +865,12 @@
 				C128DED21FB1AC92009365DA /* CountryCode.m in Sources */,
 				C1F021391FB29ACA00C16102 /* CreditCardInputViewController.m in Sources */,
 				C13E2D671FB0408C0098DF2F /* TipTypeChooserTableViewCell.m in Sources */,
+				C181B29A20205C5C00FDA7B5 /* Receipt.m in Sources */,
 				C1C077D61FAAEB6B00D26D8C /* MPQRService.m in Sources */,
+				C181B26A201EF29000FDA7B5 /* CCTNotificationManagerFireBase.m in Sources */,
 				C128DEC31FB184AB009365DA /* SettingViewController.m in Sources */,
 				C1C077E91FAAEC4500D26D8C /* PaymentInstrument.m in Sources */,
+				C181B29E20205D3800FDA7B5 /* CCTReceiptManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +893,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C181B29F20205EB600FDA7B5 /* Payment.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C181B2A020205EB600FDA7B5 /* Base */,
+			);
+			name = Payment.storyboard;
+			sourceTree = "<group>";
+		};
 		C1C077921FAAE80C00D26D8C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -971,6 +1073,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8DE51AA465AF0842EBBD01DB /* Pods-MPQRMerchantTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FARWN7FEXX;
@@ -987,6 +1090,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 019B216B17D4DF0D2944623B /* Pods-MPQRMerchantTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FARWN7FEXX;

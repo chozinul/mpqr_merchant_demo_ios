@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "MPQRMerchant-Swift.h"
 #import <UserNotifications/UserNotifications.h>
+#import "CCTNotificationManager.h"
 
 /**
  This class is the first delegate class that application call when it is started.
@@ -23,6 +25,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [CCTLogActivity printString:@"application just started"];
+    [[CCTNotificationManager sharedInstance] configureApp:application appDelegate:self];
     return YES;
 }
 

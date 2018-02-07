@@ -16,6 +16,7 @@
 #import "GetUserInfoRequest.h"
 #import "UserManager.h"
 #import "RealmDataSource.h"
+#import "CCTNotificationManager.h"
 
 @import MaterialTextField;
 

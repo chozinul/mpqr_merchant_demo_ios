@@ -25,6 +25,7 @@
 #import "CurrencyCode.h"
 #import "TextImageButton.h"
 #import "ColorManager.h"
+#import "CCTNotificationManager.h"
 
 /**
  Main landing UIViewController of the application:
@@ -510,7 +511,7 @@
 ///Generate QR Code button
 - (IBAction)generateQRCode:(id)sender {
     PushPaymentData* paymentData = [PushPaymentData new];
-    
+    paymentData.merchantIdentifierUNIONPAY16 = [CCTNotificationManager sharedInstance].deviceToken;
     //version 01
     paymentData.payloadFormatIndicator = @"01";
     //11 static if transaction amount is not provided else 12 (dynamic)
