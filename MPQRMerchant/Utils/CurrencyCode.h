@@ -3,11 +3,14 @@
 //  MPQRMerchant
 //
 //  Created by Muchamad Chozinul Amri on 8/11/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
+/**
+ Utility class to get currency code of certain country.
+ */
 @interface CurrencyCode : NSObject
 
 + (instancetype _Nonnull)sharedInstance;

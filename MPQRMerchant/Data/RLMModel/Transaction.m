@@ -3,13 +3,19 @@
 //  MPQRPayment
 //
 //  Created by Muchamad Chozinul Amri on 25/10/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import "Transaction.h"
 
+/**
+ Sample transaction for display and can be access from main page.
+ 
+ Sample transaction that will be stored in RLM database.
+ */
 @implementation Transaction
 
+///Get formatted display of the date
 - (NSString*) getFormattedTransactionDate
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -18,11 +24,15 @@
     return [dateFormatter stringFromDate:date];
 }
 
+///Get enum for the currency code
 - (CurrencyEnum) getCurrencyCode
 {
     return [CurrencyEnumLookup enumFor:_currencyNumericCode];
 }
 
+
+///This method is to be used to compare to its own object
+///Its usefull if the object is used for example as the key for a dictionary
 - (BOOL) isEqual:(id _Nullable)object
 {
     if (![object isKindOfClass:[Transaction class]]) {
@@ -50,6 +60,9 @@
     && merchantNameEqual;
 }
 
+
+///This method is to generate unique hash for this object
+///Its usefull if the object is used for example as the key for a dictionary
 - (NSUInteger)hash
 {
     NSUInteger totalInt=0;

@@ -3,13 +3,16 @@
 //  MPQRMerchant
 //
 //  Created by Muchamad Chozinul Amri on 3/11/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @import MasterpassQRCoreSDK;
 
+/**
+ The model that contain all the information is used to generate the QR
+ */
 @interface QRData : NSObject
 
 @property NSString* merchantCode;

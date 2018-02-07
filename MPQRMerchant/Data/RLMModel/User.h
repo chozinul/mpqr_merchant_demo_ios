@@ -3,7 +3,7 @@
 //  MPQRPayment
 //
 //  Created by Muchamad Chozinul Amri on 25/10/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import <Realm/Realm.h>
@@ -13,7 +13,11 @@
 RLM_ARRAY_TYPE(Transaction)
 RLM_ARRAY_TYPE(PaymentInstrument)
 
-
+/**
+ User or merchant information that is user for generating QRCode.
+ 
+ User or merchant preference that will be stored in database.
+ */
 @interface User : RLMObject
 
 @property long id;

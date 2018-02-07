@@ -3,7 +3,7 @@
 //  MPQRPayment
 //
 //  Created by Muchamad Chozinul Amri on 25/10/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import "MPQRServer.h"
@@ -15,17 +15,14 @@
 #import "PaymentInstrument.h"
 #import "LoginRequest.h"
 #import "GetUserInfoRequest.h"
-#import "ChangeDefaultCardRequest.h"
 #import "TransactionsRequest.h"
-#import "MakePaymentRequest.h"
 #import "PreferenceManager.h"
 
 @interface MPQRServer()
 
 @end
+
 @implementation MPQRServer
-
-
 static NSString * const MERCHANT_NAME_KEY = @"merchantName";
 static NSString * const MERCHANT_IDENTIFIER_KEY = @"merchantIdentifier";
 static NSString * const MERCHANT_COUNTRY_CODE_KEY = @"merchantCountryCode";
@@ -43,6 +40,7 @@ static NSString* DEFAULT_MERCHANT_CURRENCY_NUMERIC_CODE;
 static NSString* DEFAULT_MERCHANT_IDENTIFIER;
 static NSString* DEFAULT_MERCHANT_PHONE;
 
+///Singleton
 + (instancetype _Nonnull)sharedInstance
 {
     static MPQRServer *sharedInstance = nil;
@@ -56,6 +54,7 @@ static NSString* DEFAULT_MERCHANT_PHONE;
     return sharedInstance;
 }
 
+///Initializer
 - (id) init
 {
     if (self = [super init]) {
@@ -82,11 +81,19 @@ static NSString* DEFAULT_MERCHANT_PHONE;
     return self;
 }
 
+#pragma mark - API Call
+/**
+ Server API for get, all the call will go through this method:
+    - Login
+    - Get user information
+    - Get sample transactions
+ */
 - (nullable NSURLSessionDataTask *)GET:(nullable NSString *)URLString
                             parameters:(nullable id)parameters
                                success:(nullable void (^)(NSURLSessionDataTask * _Nullable task, id _Nullable responseObject))success
                                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nullable error))failure
 {
+    ///block that handle the login
     if ([URLString isEqualToString:@"/login"]) {
         LoginRequest* loginRequest = (LoginRequest*) parameters;
         //isvalidcredential
@@ -107,10 +114,9 @@ static NSString* DEFAULT_MERCHANT_PHONE;
         success(nil, loginResponse);
     }
     
+    ///Block that handle user info
     if ([URLString isEqualToString:@"/getuserinfo"]) {
-        
         GetUserInfoRequest* params = (GetUserInfoRequest*) parameters;
-        
         NSString* strAccessCode = params.accessCode;
         if(!strAccessCode)
         {
@@ -118,17 +124,13 @@ static NSString* DEFAULT_MERCHANT_PHONE;
             failure(nil, error);
             return nil;
         }
-        
         success(nil, [self createDefaultUser]);
     }
-    
    
-    
+    ///Block that handle the list of transactions
     if ([URLString isEqualToString:@"/transactions"]) {
         TransactionsRequest* request = (TransactionsRequest*) parameters;
-        
         long cardId = request.senderCardIdentifier;
-        
         RLMRealm *realm = [RLMRealm defaultRealm];
         RLMResults<Transaction*> *list = [Transaction objectsInRealm:realm where:[NSString stringWithFormat:@"instrumentIdentifier = %ld", cardId]];
         
@@ -142,7 +144,7 @@ static NSString* DEFAULT_MERCHANT_PHONE;
         }
     }
     
-    
+    ///Logout
     if ([URLString isEqualToString:@"/logout"]) {
         success(nil, nil);
     }
@@ -150,15 +152,10 @@ static NSString* DEFAULT_MERCHANT_PHONE;
     return nil;
 }
 
-#pragma mark - Helper
-- (void) printUsers
-{
-
-}
 #pragma mark - Login
+///Check if valid credential, any accesscode/password with 123456 will go through
 - (BOOL) isValidCredential:(NSString*) accessCode pin:(NSString*) pin
 {
-    
     if (![pin isEqualToString:@"123456"]) {
         return false;
     }
@@ -169,6 +166,7 @@ static NSString* DEFAULT_MERCHANT_PHONE;
     return true;
 }
 
+///Create default user, any user that login will have this default value
 - (User*) createDefaultUser
 {
     NSString* merchantName = [[PreferenceManager sharedInstance] getString:MERCHANT_NAME_KEY default:DEFAULT_MERCHANT_NAME];
@@ -198,6 +196,7 @@ static NSString* DEFAULT_MERCHANT_PHONE;
     return user;
 }
 
+///Create list of transaction, taken from transaction.JSON
 - (NSArray*) createTransactions:(User*) user
 {
     NSMutableArray* arrayResult = [NSMutableArray new];
@@ -227,6 +226,7 @@ static NSString* DEFAULT_MERCHANT_PHONE;
     return arrayResult;
 }
 
+///Read transaction.JSON file and convert to dictionary
 - (NSDictionary *)JSONFromFile
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Transaction" ofType:@"JSON"];
@@ -234,6 +234,7 @@ static NSString* DEFAULT_MERCHANT_PHONE;
     return [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 }
 
+///Debugging user information
 - (void) printUser:(User*) user
 {
     for (int i = 0; i < user.transactions.count; i++) {

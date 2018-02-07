@@ -3,22 +3,15 @@
 //  MPQRPayment
 //
 //  Created by Muchamad Chozinul Amri on 25/10/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import "PaymentInstrument.h"
 
 @implementation PaymentInstrument
 
-//- (NSString*) getFormattedAmount{
-//    NSNumberFormatter * formatter = [NSNumberFormatter new];
-//    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
-//    [formatter setMaximumFractionDigits:2]; // Set this if you need 2 digits
-//    [formatter setLocale:[NSLocale currentLocale]];
-//    NSString * newString =  [formatter stringFromNumber:[NSNumber numberWithFloat:self.balance]];
-//    return newString;
-//}
-
+///This method is to be used to compare to its own object
+///Its usefull if the object is used for example as the key for a dictionary
 - (BOOL) isEqual:(id _Nullable)object
 {
     if (![object isKindOfClass:[PaymentInstrument class]]) {
@@ -48,6 +41,8 @@
     && isDefault;
 }
 
+///This method is to generate unique hash for this object
+///Its usefull if the object is used for example as the key for a dictionary
 - (NSUInteger)hash
 {
     NSUInteger totalInt=0;

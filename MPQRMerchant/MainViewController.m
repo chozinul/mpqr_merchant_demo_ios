@@ -3,7 +3,7 @@
 //  MPQRMerchant
 //
 //  Created by Muchamad Chozinul Amri on 2/11/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import "RealmDataSource.h"
@@ -26,6 +26,14 @@
 #import "TextImageButton.h"
 #import "ColorManager.h"
 
+/**
+ Main landing UIViewController of the application:
+     - It displays the main components for generation of QR
+     - User can access setting page that consist of user preferences
+     - It can access the transaction list that merchant has performed
+     - Modify the most commontly used by merchant such as transaction amount and tips
+     - Generate QR can be access from this page
+ */
 @interface MainViewController ()
 {
     UIView* topBar;
@@ -42,7 +50,6 @@
 @property (weak, nonatomic) IBOutlet UIView *section4;
 @property (weak, nonatomic) IBOutlet UIView *amountSection;
 @property (weak, nonatomic) IBOutlet UIView *tipSection;
-
 @property (nonatomic) UILabel *lblMerchantName;
 @property (nonatomic) UILabel *lblMerchantAddress;
 
@@ -56,6 +63,8 @@
 @end
 
 @implementation MainViewController
+
+#pragma mark - UIViewController Life cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -147,6 +156,8 @@
 }
 
 #pragma mark - keyboard movements
+
+///Keyboard movement for setting the `Generate` button up and down
 - (void)keyboardWillShow:(NSNotification *)notification
 {
     CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
@@ -157,6 +168,7 @@
     }];
 }
 
+///Keyboard movement for setting the `Generate` button up and down
 -(void)keyboardWillHide:(NSNotification *)notification
 {
     [UIView animateWithDuration:0.3 animations:^{
@@ -168,12 +180,14 @@
 
 
 #pragma mark - textfield movement
+///Text field delegate to control the textfield behaviour and formatting
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     return YES;
 }
 
+///Text field delegate to control the textfield behaviour and formatting
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     if ([textField isEqual:_txtTransactionAmount]) {
@@ -220,6 +234,7 @@
     return YES;
 }
 
+///Text field delegate to control the textfield behaviour and formatting
 - (void)textFieldDidChange:(UITextField *)textField
 {
     [self updateUITotalAmount];
@@ -229,6 +244,7 @@
 
 
 #pragma mark - UI and Tips and Amount Calculation
+///Set initial display of the values to be populated
 - (void) populateView
 {
     double totalTransactionMoney = 0;
@@ -245,10 +261,12 @@
     _lblCurrencyCode2.text = [CurrencyEnumLookup getAlphaCode:[CurrencyEnumLookup enumFor:_mUser.currencyNumericCode]];
     _lblMerchantName.text = _mUser.name;
     _lblMerchantAddress.text = [NSString stringWithFormat:@"@%@", _mUser.city];
+    
     [self setInitialAmountAndTip];
     [self updateUITotalAmount];
 }
 
+///Set initial amount of the transaction and tip
 - (void) setInitialAmountAndTip
 {
     _txtTransactionAmount.text = [NSString stringWithFormat:[self getDecimalPointFormatter], _qrData.transactionAmount];
@@ -273,11 +291,13 @@
     }
 }
 
+///Update the total amount when the transaction amount or the tip is change
 - (void) updateUITotalAmount
 {
     _lblTotal.text = [NSString stringWithFormat:[self getDecimalPointFormatter], [self calculateTotalAmount]];
 }
 
+///Update the tip type button and reset tip field as well as the total amount
 - (void) updateTipTypeButtonAndResetTipField
 {
     //update the button
@@ -316,6 +336,7 @@
 }
 
 #pragma mark - UI helper
+///Added `%` at the end of the txt field
 - (void)setSuffixText:(NSString *)suffix textField:(UITextField*) textField
 {
     UILabel* existingLabel = [textField viewWithTag:992641];
@@ -346,6 +367,7 @@
     [textField setRightViewMode:UITextFieldViewModeAlways];
 }
 
+///Set transaction amount text field enable and also update the UI of the textfield
 - (void) setAmountSectionEnable:(BOOL) bEnable
 {
     _txtTransactionAmount.enabled = bEnable;
@@ -357,6 +379,7 @@
     }
 }
 
+///Set tip amount text field enable and also update the UI of the textfield
 - (void) setTipSectionEnable:(BOOL) bEnable
 {
     _txtTip.enabled = bEnable;
@@ -368,8 +391,8 @@
     }
 }
 
-#pragma mark - helper
-
+#pragma mark - Helper
+///Show any message to the user
 - (void)showAlertWithTitle:(NSString *)title message:(NSString *)message {
     DialogViewController* dialogVC = [DialogViewController new];
     dialogVC.dialogMessage = message;
@@ -380,6 +403,7 @@
                       }];
 }
 
+///Create qr data from user information
 - (QRData*) qrDataFromUser:(User*) user
 {
     QRData* qrData = [QRData new];
@@ -404,6 +428,7 @@
     return qrData;
 }
 
+///Update qr data when user information change, i.e. the setting change
 - (void) updateQRDataFromUser:(User*) user
 {
     _qrData.merchantName = user.name;
@@ -418,6 +443,7 @@
     }
 }
 
+///calculate total amount
 - (double) calculateTotalAmount
 {
     double totalAmount = 0;
@@ -438,6 +464,7 @@
     return totalAmount;
 }
 
+///helper for display the decimal point, get decimal point formatter, decimal point can be 0, 1, 2, or 3 depend on the country
 - (NSString*) getDecimalPointFormatter
 {
     NSString* alphaCode = [CurrencyEnumLookup getAlphaCode:[CurrencyEnumLookup enumFor:_mUser.currencyNumericCode]];
@@ -446,6 +473,7 @@
     return formatString;
 }
 
+///helper for display the decimal point, it will return the multiplier to get the actual value
 - (double) getDecimalPointMultiplier
 {
     NSString* alphaCode = [CurrencyEnumLookup getAlphaCode:[CurrencyEnumLookup enumFor:_mUser.currencyNumericCode]];
@@ -454,7 +482,7 @@
 }
 
 #pragma mark - Actions
-
+///Change the tip type button
 - (IBAction)chooseTipType:(id)sender {
     TipTypeDialogViewController* dvg = [TipTypeDialogViewController new];
     dvg.dialogHeight = 260;
@@ -472,14 +500,17 @@
                  }];
 }
 
+///Open transaction button
 - (IBAction)openTransactions:(id)sender {
     
     TransactionListViewController* transactionVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TransactionListViewController"];
     [self.navigationController pushViewController:transactionVC animated:YES];
 }
 
+///Generate QR Code button
 - (IBAction)generateQRCode:(id)sender {
     PushPaymentData* paymentData = [PushPaymentData new];
+    
     //version 01
     paymentData.payloadFormatIndicator = @"01";
     //11 static if transaction amount is not provided else 12 (dynamic)
@@ -521,6 +552,7 @@
         || _qrData.merchantTerminalNumber
         || _qrData.merchantMobile) {
         AdditionalData* additionalData = [AdditionalData new];
+        
         if(_qrData.merchantStoreId)additionalData.storeId = _qrData.merchantStoreId;
         if(_qrData.merchantTerminalNumber)additionalData.terminalId = _qrData.merchantTerminalNumber;
         if(_qrData.merchantMobile)additionalData.mobileNumber = _qrData.merchantMobile;
@@ -540,12 +572,14 @@
     
 }
 
+///Setting button pressed
 - (void) btnSettingPressed
 {
     SettingViewController* settingVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SettingViewController"];
     [self.navigationController pushViewController:settingVC animated:YES];
 }
 
+///Logout action button pressed
 - (void) btnLogoutPressed
 {
     DialogViewController* dvg = [DialogViewController new];

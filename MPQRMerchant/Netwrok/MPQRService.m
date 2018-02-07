@@ -3,7 +3,7 @@
 //  MPQRPayment
 //
 //  Created by Muchamad Chozinul Amri on 25/10/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import "MPQRService.h"
@@ -57,46 +57,6 @@
                      failure:(nullable void (^)(NSError* _Nullable error))failure
 {
     [[MPQRServer sharedInstance] GET:@"/getuserinfo"
-                          parameters:parameters
-                             success:^(NSURLSessionDataTask* task, id response){
-                                 success(response);
-                             } failure:^(NSURLSessionDataTask* task, NSError* error){
-                                 failure(error);
-                             }];
-}
-
-- (void) changeDefaultCardWithParameters:(nullable id)parameters
-                                       success:(nullable void (^)(User* _Nullable responseObject))success
-                                       failure:(nullable void (^)(NSError * _Nullable error))failure
-{
-    [[MPQRServer sharedInstance] GET:@"/changedefaultcard"
-                          parameters:parameters
-                             success:^(NSURLSessionDataTask* task, id response){
-                                 success(response);
-                             } failure:^(NSURLSessionDataTask* task, NSError* error){
-                                 failure(error);
-                             }];
-}
-
-
-- (void) makePaymentWithParameters:(nullable id)parameters
-                                 success:(nullable void (^)(id _Nullable responseObject))success
-                                 failure:(nullable void (^)(NSError * _Nullable error))failure
-{
-    [[MPQRServer sharedInstance] GET:@"/makepayment"
-                          parameters:parameters
-                             success:^(NSURLSessionDataTask* task, id response){
-                                 success(response);
-                             } failure:^(NSURLSessionDataTask* task, NSError* error){
-                                 failure(error);
-                             }];
-}
-
-- (void) getTransactionsParameters:(nullable id)parameters
-                           success:(nullable void (^)(RLMResults<Transaction*> * _Nullable responseObject))success
-                           failure:(nullable void (^)(NSError * _Nullable error))failure
-{
-    [[MPQRServer sharedInstance] GET:@"/transactions"
                           parameters:parameters
                              success:^(NSURLSessionDataTask* task, id response){
                                  success(response);

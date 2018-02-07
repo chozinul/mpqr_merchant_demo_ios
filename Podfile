@@ -6,11 +6,13 @@ target 'MPQRMerchant' do
   use_frameworks!
 
   # Pods for MPQRMerchant
-  
   pod 'Realm'
-  pod 'MasterpassQRCoreSDK', :path => '/Users/amri/Desktop/Development/Gitlab/Version2/mpqr_scanner_test_swift/coresdk/build/ios/package-2.0.3'
+  pod 'MasterpassQRCoreSDK'
   pod 'DLRadioButton', '~> 1.4'
   pod 'MaterialTextField'
+  pod 'AFNetworking', '~> 3.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
   
   target 'MPQRMerchantTests' do
     inherit! :search_paths

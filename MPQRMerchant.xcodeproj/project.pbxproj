@@ -10,7 +10,6 @@
 		0D655B6A783F919F98E69518 /* Pods_MPQRMerchantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA4BA1B431B344C894086FA /* Pods_MPQRMerchantTests.framework */; };
 		C128DEB71FB143E6009365DA /* TransactionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEB61FB14327009365DA /* TransactionListViewController.m */; };
 		C128DEB81FB143E9009365DA /* TransactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEB41FB14327009365DA /* TransactionDetailViewController.m */; };
-		C128DEBA1FB15792009365DA /* temp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C128DEB91FB15792009365DA /* temp.storyboard */; };
 		C128DEBF1FB16999009365DA /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEBD1FB16999009365DA /* SettingTableViewCell.m */; };
 		C128DEC01FB16999009365DA /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C128DEBE1FB16999009365DA /* SettingTableViewCell.xib */; };
 		C128DEC31FB184AB009365DA /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C128DEC21FB184AB009365DA /* SettingViewController.m */; };
@@ -36,6 +35,7 @@
 		C13E2D681FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13E2D661FB0408C0098DF2F /* TipTypeChooserTableViewCell.xib */; };
 		C149F5FD1FB3130900644D68 /* TextImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C149F5FC1FB3130900644D68 /* TextImageButton.m */; };
 		C17B008A1FB0722A00461701 /* QRDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C17B00891FB0722A00461701 /* QRDisplayViewController.m */; };
+		C181B3212021628400FDA7B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C181B3202021628400FDA7B5 /* AudioToolbox.framework */; };
 		C1C0778E1FAAE80C00D26D8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C0778D1FAAE80C00D26D8C /* AppDelegate.m */; };
 		C1C077911FAAE80C00D26D8C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077901FAAE80C00D26D8C /* MainViewController.m */; };
 		C1C077941FAAE80C00D26D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C077921FAAE80C00D26D8C /* Main.storyboard */; };
@@ -46,19 +46,14 @@
 		C1C077D51FAAEB6800D26D8C /* MPQRServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C01FAAEB5800D26D8C /* MPQRServer.m */; };
 		C1C077D61FAAEB6B00D26D8C /* MPQRService.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C21FAAEB5800D26D8C /* MPQRService.m */; };
 		C1C077D71FAAEB6F00D26D8C /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C51FAAEB5800D26D8C /* BaseRequest.m */; };
-		C1C077D81FAAEB7F00D26D8C /* ChangeDefaultCardRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C71FAAEB5800D26D8C /* ChangeDefaultCardRequest.m */; };
 		C1C077D91FAAEB8200D26D8C /* GetUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077C91FAAEB5800D26D8C /* GetUserInfoRequest.m */; };
 		C1C077DA1FAAEB8500D26D8C /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077CB1FAAEB5800D26D8C /* LoginRequest.m */; };
 		C1C077DB1FAAEB8700D26D8C /* LogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077CD1FAAEB5800D26D8C /* LogoutRequest.m */; };
-		C1C077DC1FAAEB8A00D26D8C /* MakePaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077CF1FAAEB5800D26D8C /* MakePaymentRequest.m */; };
 		C1C077DD1FAAEB8D00D26D8C /* TransactionsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077D11FAAEB5800D26D8C /* TransactionsRequest.m */; };
 		C1C077DE1FAAEB9300D26D8C /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077D41FAAEB5800D26D8C /* LoginResponse.m */; };
 		C1C077E61FAAEC3D00D26D8C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077BC1FAAEACD00D26D8C /* User.m */; };
 		C1C077E71FAAEC4000D26D8C /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077BA1FAAEACD00D26D8C /* Transaction.m */; };
-		C1C077E81FAAEC4300D26D8C /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077B81FAAEACD00D26D8C /* Receipt.m */; };
 		C1C077E91FAAEC4500D26D8C /* PaymentInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077B61FAAEACD00D26D8C /* PaymentInstrument.m */; };
-		C1C077EA1FAAEC4800D26D8C /* PaymentData.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077B41FAAEACD00D26D8C /* PaymentData.m */; };
-		C1C077EB1FAAEC4B00D26D8C /* Merchant.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077B21FAAEACD00D26D8C /* Merchant.m */; };
 		C1C077EC1FAAEC5B00D26D8C /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077E11FAAEC1300D26D8C /* ColorManager.m */; };
 		C1C077EE1FAAEC6000D26D8C /* CurrencyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C077E51FAAEC1300D26D8C /* CurrencyFormatter.m */; };
 		C1F021391FB29ACA00C16102 /* CreditCardInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F021381FB29ACA00C16102 /* CreditCardInputViewController.m */; };
@@ -87,7 +82,6 @@
 		C128DEB41FB14327009365DA /* TransactionDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailViewController.m; sourceTree = "<group>"; };
 		C128DEB51FB14327009365DA /* TransactionListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionListViewController.h; sourceTree = "<group>"; };
 		C128DEB61FB14327009365DA /* TransactionListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionListViewController.m; sourceTree = "<group>"; };
-		C128DEB91FB15792009365DA /* temp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = temp.storyboard; sourceTree = "<group>"; };
 		C128DEBC1FB16999009365DA /* SettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
 		C128DEBD1FB16999009365DA /* SettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
 		C128DEBE1FB16999009365DA /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
@@ -134,6 +128,8 @@
 		C149F5FC1FB3130900644D68 /* TextImageButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextImageButton.m; sourceTree = "<group>"; };
 		C17B00881FB0722A00461701 /* QRDisplayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRDisplayViewController.h; sourceTree = "<group>"; };
 		C17B00891FB0722A00461701 /* QRDisplayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRDisplayViewController.m; sourceTree = "<group>"; };
+		C181B261201EEE9C00FDA7B5 /* MPQRMerchant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MPQRMerchant.entitlements; sourceTree = "<group>"; };
+		C181B3202021628400FDA7B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C1C077891FAAE80C00D26D8C /* MPQRMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPQRMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C0778C1FAAE80C00D26D8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1C0778D1FAAE80C00D26D8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,14 +143,8 @@
 		C1C077A11FAAE80C00D26D8C /* MPQRMerchantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPQRMerchantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C077A51FAAE80C00D26D8C /* MPQRMerchantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPQRMerchantTests.m; sourceTree = "<group>"; };
 		C1C077A71FAAE80C00D26D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1C077B11FAAEACD00D26D8C /* Merchant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Merchant.h; sourceTree = "<group>"; };
-		C1C077B21FAAEACD00D26D8C /* Merchant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Merchant.m; sourceTree = "<group>"; };
-		C1C077B31FAAEACD00D26D8C /* PaymentData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentData.h; sourceTree = "<group>"; };
-		C1C077B41FAAEACD00D26D8C /* PaymentData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentData.m; sourceTree = "<group>"; };
 		C1C077B51FAAEACD00D26D8C /* PaymentInstrument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentInstrument.h; sourceTree = "<group>"; };
 		C1C077B61FAAEACD00D26D8C /* PaymentInstrument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentInstrument.m; sourceTree = "<group>"; };
-		C1C077B71FAAEACD00D26D8C /* Receipt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
-		C1C077B81FAAEACD00D26D8C /* Receipt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
 		C1C077B91FAAEACD00D26D8C /* Transaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
 		C1C077BA1FAAEACD00D26D8C /* Transaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
 		C1C077BB1FAAEACD00D26D8C /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -165,16 +155,12 @@
 		C1C077C21FAAEB5800D26D8C /* MPQRService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPQRService.m; sourceTree = "<group>"; };
 		C1C077C41FAAEB5800D26D8C /* BaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
 		C1C077C51FAAEB5800D26D8C /* BaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
-		C1C077C61FAAEB5800D26D8C /* ChangeDefaultCardRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeDefaultCardRequest.h; sourceTree = "<group>"; };
-		C1C077C71FAAEB5800D26D8C /* ChangeDefaultCardRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeDefaultCardRequest.m; sourceTree = "<group>"; };
 		C1C077C81FAAEB5800D26D8C /* GetUserInfoRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetUserInfoRequest.h; sourceTree = "<group>"; };
 		C1C077C91FAAEB5800D26D8C /* GetUserInfoRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetUserInfoRequest.m; sourceTree = "<group>"; };
 		C1C077CA1FAAEB5800D26D8C /* LoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
 		C1C077CB1FAAEB5800D26D8C /* LoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
 		C1C077CC1FAAEB5800D26D8C /* LogoutRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogoutRequest.h; sourceTree = "<group>"; };
 		C1C077CD1FAAEB5800D26D8C /* LogoutRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogoutRequest.m; sourceTree = "<group>"; };
-		C1C077CE1FAAEB5800D26D8C /* MakePaymentRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakePaymentRequest.h; sourceTree = "<group>"; };
-		C1C077CF1FAAEB5800D26D8C /* MakePaymentRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakePaymentRequest.m; sourceTree = "<group>"; };
 		C1C077D01FAAEB5800D26D8C /* TransactionsRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionsRequest.h; sourceTree = "<group>"; };
 		C1C077D11FAAEB5800D26D8C /* TransactionsRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionsRequest.m; sourceTree = "<group>"; };
 		C1C077D31FAAEB5800D26D8C /* LoginResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginResponse.h; sourceTree = "<group>"; };
@@ -196,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C181B3212021628400FDA7B5 /* AudioToolbox.framework in Frameworks */,
 				FF15098B31BB6801402741E8 /* Pods_MPQRMerchant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +293,7 @@
 		C13E2D511FAC68750098DF2F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C1FB745520148A7000917F0F /* RLMModel */,
 				C1C077B01FAAEACD00D26D8C /* Model */,
 				C13E2D521FAC68960098DF2F /* DataSource.h */,
 				C13E2D531FAC6B0F0098DF2F /* RealmDataSource.h */,
@@ -377,6 +365,7 @@
 		C1C0778B1FAAE80C00D26D8C /* MPQRMerchant */ = {
 			isa = PBXGroup;
 			children = (
+				C181B261201EEE9C00FDA7B5 /* MPQRMerchant.entitlements */,
 				C149F5FA1FB312CB00644D68 /* CustomButton */,
 				C128DEBB1FB16948009365DA /* Setting */,
 				C128DEB21FB14327009365DA /* TransactionHistory */,
@@ -388,11 +377,10 @@
 				C1C077DF1FAAEC1300D26D8C /* Utils */,
 				C1C077BD1FAAEB5800D26D8C /* Netwrok */,
 				C13E2D511FAC68750098DF2F /* Data */,
-				C1C0778D1FAAE80C00D26D8C /* AppDelegate.m */,
 				C1C0778C1FAAE80C00D26D8C /* AppDelegate.h */,
+				C1C0778D1FAAE80C00D26D8C /* AppDelegate.m */,
 				C1C0778F1FAAE80C00D26D8C /* MainViewController.h */,
 				C1C077901FAAE80C00D26D8C /* MainViewController.m */,
-				C128DEB91FB15792009365DA /* temp.storyboard */,
 				C1C077921FAAE80C00D26D8C /* Main.storyboard */,
 				C1C077951FAAE80C00D26D8C /* Assets.xcassets */,
 				C1C077971FAAE80C00D26D8C /* LaunchScreen.storyboard */,
@@ -414,18 +402,6 @@
 		C1C077B01FAAEACD00D26D8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C1C077B11FAAEACD00D26D8C /* Merchant.h */,
-				C1C077B21FAAEACD00D26D8C /* Merchant.m */,
-				C1C077B31FAAEACD00D26D8C /* PaymentData.h */,
-				C1C077B41FAAEACD00D26D8C /* PaymentData.m */,
-				C1C077B51FAAEACD00D26D8C /* PaymentInstrument.h */,
-				C1C077B61FAAEACD00D26D8C /* PaymentInstrument.m */,
-				C1C077B71FAAEACD00D26D8C /* Receipt.h */,
-				C1C077B81FAAEACD00D26D8C /* Receipt.m */,
-				C1C077B91FAAEACD00D26D8C /* Transaction.h */,
-				C1C077BA1FAAEACD00D26D8C /* Transaction.m */,
-				C1C077BB1FAAEACD00D26D8C /* User.h */,
-				C1C077BC1FAAEACD00D26D8C /* User.m */,
 				C13E2D4B1FAC64AE0098DF2F /* Settings.h */,
 				C13E2D4C1FAC64AE0098DF2F /* Settings.m */,
 				C13E2D4E1FAC650F0098DF2F /* QRData.h */,
@@ -461,16 +437,12 @@
 			children = (
 				C1C077C41FAAEB5800D26D8C /* BaseRequest.h */,
 				C1C077C51FAAEB5800D26D8C /* BaseRequest.m */,
-				C1C077C61FAAEB5800D26D8C /* ChangeDefaultCardRequest.h */,
-				C1C077C71FAAEB5800D26D8C /* ChangeDefaultCardRequest.m */,
 				C1C077C81FAAEB5800D26D8C /* GetUserInfoRequest.h */,
 				C1C077C91FAAEB5800D26D8C /* GetUserInfoRequest.m */,
 				C1C077CA1FAAEB5800D26D8C /* LoginRequest.h */,
 				C1C077CB1FAAEB5800D26D8C /* LoginRequest.m */,
 				C1C077CC1FAAEB5800D26D8C /* LogoutRequest.h */,
 				C1C077CD1FAAEB5800D26D8C /* LogoutRequest.m */,
-				C1C077CE1FAAEB5800D26D8C /* MakePaymentRequest.h */,
-				C1C077CF1FAAEB5800D26D8C /* MakePaymentRequest.m */,
 				C1C077D01FAAEB5800D26D8C /* TransactionsRequest.h */,
 				C1C077D11FAAEB5800D26D8C /* TransactionsRequest.m */,
 			);
@@ -503,9 +475,23 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C1FB745520148A7000917F0F /* RLMModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1C077B51FAAEACD00D26D8C /* PaymentInstrument.h */,
+				C1C077B61FAAEACD00D26D8C /* PaymentInstrument.m */,
+				C1C077B91FAAEACD00D26D8C /* Transaction.h */,
+				C1C077BA1FAAEACD00D26D8C /* Transaction.m */,
+				C1C077BB1FAAEACD00D26D8C /* User.h */,
+				C1C077BC1FAAEACD00D26D8C /* User.m */,
+			);
+			path = RLMModel;
+			sourceTree = "<group>";
+		};
 		D49B181483CF75A3E69BA7C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C181B3202021628400FDA7B5 /* AudioToolbox.framework */,
 				CFDBF87494BF89E0CDCB9C3B /* Pods_MPQRMerchant.framework */,
 				ADA4BA1B431B344C894086FA /* Pods_MPQRMerchantTests.framework */,
 			);
@@ -563,11 +549,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "Muchamad Chozinul Amri";
+				ORGANIZATIONNAME = Mastercard;
 				TargetAttributes = {
 					C1C077881FAAE80C00D26D8C = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					C1C077A01FAAE80C00D26D8C = {
 						CreatedOnToolsVersion = 9.0;
@@ -609,7 +604,6 @@
 				C1F0213E1FB2C44F00C16102 /* Currency.init in Resources */,
 				C128DECC1FB1A100009365DA /* GenericRadioButtonTableViewCell.xib in Resources */,
 				C1C077941FAAE80C00D26D8C /* Main.storyboard in Resources */,
-				C128DEBA1FB15792009365DA /* temp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,17 +624,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MPQRMerchant/Pods-MPQRMerchant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
-				"${PODS_ROOT}/../../Version2/mpqr_scanner_test_swift/coresdk/build/ios/package-2.0.3/Frameworks/MasterpassQRCoreSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${PODS_ROOT}/MasterpassQRCoreSDK/Frameworks/MasterpassQRCoreSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialTextField/MaterialTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MasterpassQRCoreSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -735,7 +737,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1C077E81FAAEC4300D26D8C /* Receipt.m in Sources */,
 				C17B008A1FB0722A00461701 /* QRDisplayViewController.m in Sources */,
 				C13E2D221FAAEEA10098DF2F /* LoginManager.m in Sources */,
 				C1F0213C1FB2C1BF00C16102 /* CurrencyCode.m in Sources */,
@@ -748,13 +749,11 @@
 				C1C077DB1FAAEB8700D26D8C /* LogoutRequest.m in Sources */,
 				C1C077EE1FAAEC6000D26D8C /* CurrencyFormatter.m in Sources */,
 				C1C077DE1FAAEB9300D26D8C /* LoginResponse.m in Sources */,
-				C1C077EA1FAAEC4800D26D8C /* PaymentData.m in Sources */,
 				C1C077E71FAAEC4000D26D8C /* Transaction.m in Sources */,
 				C13E2D241FAAEEA60098DF2F /* UserManager.m in Sources */,
 				C1C077DD1FAAEB8D00D26D8C /* TransactionsRequest.m in Sources */,
 				C1C077EC1FAAEC5B00D26D8C /* ColorManager.m in Sources */,
 				C1C0779C1FAAE80C00D26D8C /* main.m in Sources */,
-				C1C077DC1FAAEB8A00D26D8C /* MakePaymentRequest.m in Sources */,
 				C128DED51FB1BE69009365DA /* CreditCardFormatter.m in Sources */,
 				C128DECB1FB1A100009365DA /* GenericRadioButtonTableViewCell.m in Sources */,
 				C13E2D601FB03F460098DF2F /* TipTypeDialogViewController.m in Sources */,
@@ -770,10 +769,8 @@
 				C1C0778E1FAAE80C00D26D8C /* AppDelegate.m in Sources */,
 				C149F5FD1FB3130900644D68 /* TextImageButton.m in Sources */,
 				C1C077D71FAAEB6F00D26D8C /* BaseRequest.m in Sources */,
-				C1C077EB1FAAEC4B00D26D8C /* Merchant.m in Sources */,
 				C1C077DA1FAAEB8500D26D8C /* LoginRequest.m in Sources */,
 				C13E2D551FAC6B0F0098DF2F /* RealmDataSource.m in Sources */,
-				C1C077D81FAAEB7F00D26D8C /* ChangeDefaultCardRequest.m in Sources */,
 				C128DED21FB1AC92009365DA /* CountryCode.m in Sources */,
 				C1F021391FB29ACA00C16102 /* CreditCardInputViewController.m in Sources */,
 				C13E2D671FB0408C0098DF2F /* TipTypeChooserTableViewCell.m in Sources */,
@@ -930,13 +927,20 @@
 			baseConfigurationReference = 3F0F4D2C11B6663301C72931 /* Pods-MPQRMerchant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MPQRMerchant/MPQRMerchant.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = MPQRMerchant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mastercard.iOSMPQRMerchant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcaios.merchant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6d97c665-756a-4938-be2e-7dddabc7c86b";
+				PROVISIONING_PROFILE_SPECIFIER = "MCA iOS Merchant Provisioning Profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPQRMerchant/Money2020/MPQRMerchant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -946,13 +950,19 @@
 			baseConfigurationReference = 84D0C653DDA9A177D52A7F8D /* Pods-MPQRMerchant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MPQRMerchant/MPQRMerchant.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 9T73B6L4GQ;
 				INFOPLIST_FILE = MPQRMerchant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mastercard.iOSMPQRMerchant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcaios.merchant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6d97c665-756a-4938-be2e-7dddabc7c86b";
+				PROVISIONING_PROFILE_SPECIFIER = "MCA iOS Merchant Provisioning Profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPQRMerchant/Money2020/MPQRMerchant-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

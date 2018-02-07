@@ -3,7 +3,7 @@
 //  MPQRPayment
 //
 //  Created by Muchamad Chozinul Amri on 26/10/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import "LoginManager.h"
@@ -13,40 +13,37 @@
 
 @end
 
+/**
+ Save access id and token for server API call
+ Save last access code for easier login
+ */
 @implementation LoginManager
 
 static NSString* _lastUser;
 
+///Singleton object
 + (instancetype _Nonnull)sharedInstance
 {
     static LoginManager *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[LoginManager alloc] init];
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        _lastUser = [defaults objectForKey:@"last access code"];
-        
-        NSString *path = [[NSBundle mainBundle] pathForResource: @"init" ofType: @"plist"];
-        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile: path];
-        _lastUser = [dict objectForKey: @"lastAccessCode"];
-        
         if (!_lastUser) {
-            _lastUser = @"87654321";
+            _lastUser = @"jerry";
         }
+        // Do any other initialisation stuff here
     });
     return sharedInstance;
 }
 
+///setter ffor login info
 - (void) setLoginInfo:(LoginResponse *)loginInfo
 {
-    if (loginInfo.accessCode) {
-        _lastUser = loginInfo.accessCode;
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setObject:_lastUser forKey:@"last access code"];
-    }
+    _lastUser = loginInfo.accessCode;
     _loginInfo = loginInfo;
 }
 
+///getter for last user
 - (NSString*) lastUser
 {
     return _lastUser;
@@ -55,3 +52,4 @@ static NSString* _lastUser;
 
 
 @end
+

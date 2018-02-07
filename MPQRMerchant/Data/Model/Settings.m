@@ -3,12 +3,16 @@
 //  MPQRMerchant
 //
 //  Created by Muchamad Chozinul Amri on 3/11/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import "Settings.h"
 
+/**
+ Setting item that is used for storing setting/preference data for the user.
+ */
 @implementation Settings
+
 
 + (instancetype) SettingWithTitle:(NSString*) title value:(NSString*) value isEditable:(BOOL) isEditable
 {

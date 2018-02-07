@@ -3,7 +3,7 @@
 //  MPQRPayment
 //
 //  Created by Muchamad Chozinul Amri on 29/10/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import "ColorManager.h"
@@ -56,4 +56,55 @@
 {
     return [UIColor colorWithRed:255/255.0 green:248/255.0 blue:221/255.0 alpha:1.0];
 }
+
+///textfield enabled
+- (UIColor* _Nonnull) textFieldEnabledBackgroundColor
+{
+    return [UIColor whiteColor];
+}
+
+///textfield enabled
+- (UIColor* _Nonnull) textFieldEnabledLineColor
+{
+    return [UIColor colorWithRed:231/255.0 green:179/255.0 blue:42/255.0 alpha:1.0];
+}
+
+///textfield enabled
+- (UIColor* _Nonnull) textFieldEnabledTitleColor
+{
+    return [UIColor colorWithRed:231/255.0 green:179/255.0 blue:42/255.0 alpha:1.0];
+}
+
+
+
+///textfield disabled
+- (UIColor* _Nonnull) textFieldDisabledBackgroundColor
+{
+    return [UIColor colorWithRed:255/255.0 green:248/255.0 blue:221/255.0 alpha:1.0];
+}
+
+///textfield disabled
+- (UIColor* _Nonnull) textFieldDisabledLineColor
+{
+    return [UIColor lightGrayColor];
+}
+
+///textfield disabled
+- (UIColor* _Nonnull) textFieldDisabledTitleColor
+{
+    return [UIColor darkGrayColor];
+}
+
+///textfield nonzero
+- (UIColor* _Nonnull) textFieldNonZeroValueColor
+{
+    return [UIColor blackColor];
+}
+
+///textfield zero
+- (UIColor* _Nonnull) textFieldZeroValueColor
+{
+    return [UIColor lightGrayColor];
+}
+
 @end

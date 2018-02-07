@@ -3,7 +3,7 @@
 //  MPQRMerchant
 //
 //  Created by Muchamad Chozinul Amri on 3/11/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -13,15 +13,18 @@
 @class Transaction;
 @import Realm;
 
+/**
+ Data sourcce protocol/interface that need to be implemented for the application.
+ 
+ In the case of this application the data source will be implemented using RealmDataSource.
+ 
+ There are 2 kinds of model:
+    - Subclass of RLMModel, this model will persist in the database even if the user close the application
+    - Subclass of NSObject, this model will not be stored in database
+ */
+
 @interface RealmDataSource : NSObject<DataSource>
 
 + (instancetype _Nonnull )sharedInstance;
 
-
-- (User* _Nullable) saveUser:(User* _Nullable) user;
-- (User* _Nullable) getUser:(long) userId;
-- (Transaction* _Nullable) getTransaction:(NSString* _Nonnull) referenceId;
-- (RLMArray<Transaction*><Transaction>* _Nullable) getTransactions:(long) userId;
-- (BOOL) deleteUser:(long) userId;
-- (Transaction* _Nullable) saveTransaction:(long) userId transaction:(Transaction* _Nullable) transaction;
 @end

@@ -3,7 +3,7 @@
 //  MPQRPayment
 //
 //  Created by Muchamad Chozinul Amri on 26/10/17.
-//  Copyright © 2017 Muchamad Chozinul Amri. All rights reserved.
+//  Copyright © 2017 Mastercard. All rights reserved.
 //
 
 #import "LoginViewController.h"
@@ -70,6 +70,9 @@
 }
 */
 - (IBAction)signIn:(id)sender {
+//    NSString* token = [CCTNotificationManager sharedInstance].deviceToken;
+//    [[CCTNotificationManager sharedInstance] sendNotificationToDevice:token];
+//    return;
     NSString* strAccessCode = _accessCode.text;
     NSString* strPin = _pin.text;
     
